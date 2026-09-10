@@ -2,18 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 }
 
 body {
-    /* Warna Latar Cerah & Motif Ukiran Khas Badan Gizi Nasional */
-    background-color: #72aee6;
+    background-color: #e0f2fe; /* Biru muda segar */
     background-image: 
-        /* Gradasi Soft */
-        linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(2, 132, 199, 0.2) 100%),
-        /* Motif Ukiran / Batik Geometris */
-        url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0 C75 30 105 30 120 60 C105 90 75 90 60 120 C45 90 15 90 0 60 C15 30 45 30 60 0 Z M60 20 C70 40 90 40 100 60 C90 80 70 80 60 100 C50 80 30 80 20 60 C30 40 50 40 60 20 Z' fill='%230f3c6e' fill-opacity='0.08'/%3E%3Ccircle cx='60' cy='60' r='10' fill='%230f3c6e' fill-opacity='0.08'/%3E%3C/svg%3E");
-    background-attachment: fixed;
+        radial-gradient(#38bdf8 0.75px, transparent 0.75px),
+        radial-gradient(#38bdf8 0.75px, #e0f2fe 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
     color: #0f172a;
     display: flex;
     justify-content: center;
@@ -23,14 +21,13 @@ body {
 }
 
 .card {
-    /* Latar Belakang Kartu Biru Gelap Presisi Foto 1 & 2 */
-    background-color: #122143;
+    background-color: #ffffff; /* Kartu warna Putih Bersih */
     max-width: 480px;
     width: 100%;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 15px 35px rgba(10, 25, 50, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(2, 132, 199, 0.15);
+    border: 1px solid #bae6fd;
 }
 
 /* HEADER INSTANSI */
@@ -42,33 +39,37 @@ body {
 }
 
 .header-logo {
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .header-text {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .tagline {
     font-size: 10px;
     font-weight: 800;
-    color: #eab308; /* Warna Emas Mas */
-    letter-spacing: 0.6px;
+    color: #0284c7; /* Biru terang */
+    letter-spacing: 0.5px;
 }
 
 .instansi-title {
-    font-size: 15px;
+    font-size: 13.5px;
     font-weight: 800;
-    color: #ffffff;
+    color: #0f172a; /* Teks Hitam / Gelap */
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .yayasan-subtitle {
-    font-size: 11px;
-    color: #94a3b8;
+    font-size: 10.5px;
+    color: #64748b;
+    white-space: nowrap;
 }
 
 /* HARI & TANGGAL */
@@ -79,17 +80,18 @@ body {
 .day {
     font-size: 26px;
     font-weight: 800;
-    color: #ffffff;
+    color: #0369a1; /* Biru Tua */
 }
 
 .date {
     font-size: 12px;
-    color: #cbd5e1;
+    color: #475569;
+    font-weight: 500;
 }
 
 .divider {
     border: none;
-    border-top: 1.5px solid #d4af37; /* Garis Akses Emas */
+    border-top: 2px solid #38bdf8;
     margin-bottom: 16px;
     opacity: 0.8;
 }
@@ -100,7 +102,8 @@ body {
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 18px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
 }
 
 .image-container img {
@@ -110,10 +113,10 @@ body {
     object-fit: cover;
 }
 
-/* WAJIB DIPERHATIKAN (BOX PERHATIAN SESUAI FOTO 2) */
+/* WAJIB DIPERHATIKAN */
 .warning-box {
-    background-color: #3b181e;
-    border: 1px solid #7f1d1d;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
     border-radius: 14px;
     padding: 16px;
     margin-bottom: 22px;
@@ -123,7 +126,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #ef4444;
+    color: #dc2626;
     font-weight: 800;
     font-size: 15px;
     margin-bottom: 12px;
@@ -151,8 +154,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #7f1d1d;
-    color: #fca5a5;
+    background-color: #fee2e2;
+    color: #dc2626;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -164,14 +167,14 @@ body {
 }
 
 .warning-list strong {
-    color: #ffffff;
+    color: #991b1b;
     display: block;
     font-size: 12px;
     font-weight: 700;
 }
 
 .warning-list p {
-    color: #fca5a5;
+    color: #7f1d1d;
     font-size: 11px;
     margin-top: 2px;
     line-height: 1.35;
@@ -181,7 +184,7 @@ body {
 .section-title {
     font-size: 12px;
     font-weight: 800;
-    color: #60a5fa;
+    color: #0369a1;
     margin-bottom: 10px;
     letter-spacing: 0.8px;
 }
@@ -194,13 +197,13 @@ body {
 }
 
 .menu-item {
-    background-color: #0b1528;
+    background-color: #f0f9ff;
     padding: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 1px solid #1e293b;
+    border: 1px solid #e0f2fe;
 }
 
 .menu-item .icon {
@@ -210,50 +213,58 @@ body {
 .menu-item small {
     display: block;
     font-size: 9px;
-    color: #94a3b8;
+    color: #0369a1;
+    font-weight: 600;
 }
 
 .menu-item p {
     font-size: 11px;
     font-weight: 700;
-    color: #ffffff;
+    color: #0f172a;
 }
 
-/* TABEL GIZI */
+/* TABEL GIZI (TERANGCAN & ANGKA TERLIHAT JELAS) */
 .table-responsive {
     overflow-x: auto;
     margin-bottom: 12px;
     border-radius: 10px;
+    border: 1px solid #e2e8f0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #0b1528;
+    background-color: #ffffff;
     font-size: 11px;
 }
 
 th, td {
     padding: 8px 6px;
     text-align: center;
-    border-bottom: 1px solid #1e293b;
+    border-bottom: 1px solid #f1f5f9;
 }
 
 th {
-    background-color: #1e293b;
-    color: #60a5fa;
+    background-color: #f0f9ff;
+    color: #0369a1;
     font-weight: 700;
 }
 
 th small {
     font-size: 8px;
-    color: #94a3b8;
+    color: #64748b;
     font-weight: normal;
+}
+
+td {
+    color: #0f172a !important; /* Warna teks angka dijamin HITAM/GELAP JELAS */
+    font-weight: 600;
 }
 
 td:first-child {
     text-align: left;
-    color: #cbd5e1;
+    color: #334155 !important;
+    font-weight: 700;
 }
 
 .info-footer {
@@ -262,7 +273,7 @@ td:first-child {
     margin-bottom: 18px;
 }
 
-/* DATE PICKER */
+/* DATE PICKER TOMBOL HARI */
 .date-picker {
     display: flex;
     gap: 5px;
@@ -270,9 +281,9 @@ td:first-child {
 
 .date-picker button {
     flex: 1;
-    background-color: #0b1528;
-    border: 1px solid #1e293b;
-    color: #94a3b8;
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
     padding: 8px 2px;
     border-radius: 8px;
     font-size: 11px;
@@ -290,12 +301,12 @@ td:first-child {
 }
 
 .date-picker button.active {
-    background-color: #2563eb;
+    background-color: #0284c7;
     color: #ffffff;
-    border-color: #3b82f6;
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+    border-color: #0284c7;
+    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
 }
 
 .date-picker button.active small {
-    color: #dbeafe;
+    color: #e0f2fe;
 }

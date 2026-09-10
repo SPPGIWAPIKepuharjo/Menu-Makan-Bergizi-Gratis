@@ -3,7 +3,7 @@ const dataMenu = {
     senin: {
         hari: "Senin",
         tanggal: "24 Agustus 2026",
-        foto: "martabak.jpg", // Ganti dengan nama file gambar sesuai hari
+        foto: "martabak.jpg",
         karbo: "Nasi Putih",
         laukUtama: "Ayam Goreng",
         laukPendamping: "Tahu Goreng",
@@ -131,16 +131,13 @@ const seratBesar = document.getElementById('serat-besar');
 const seratBumil = document.getElementById('serat-bumil');
 const seratBalita = document.getElementById('serat-balita');
 
-// Fungsi untuk memperbarui tampilan berdasarkan hari yang dipilih
 function updateTampilan(keyHari) {
     const data = dataMenu[keyHari];
     if (!data) return;
 
-    // Update Header Hari & Tanggal
     hariText.textContent = data.hari;
     tanggalText.textContent = data.tanggal;
 
-    // Update Foto & Menu
     fotoMenu.src = data.foto;
     karboText.textContent = data.karbo;
     laukUtamaText.textContent = data.laukUtama;
@@ -149,7 +146,6 @@ function updateTampilan(keyHari) {
     buahText.textContent = data.buah;
     minumanText.textContent = data.minuman;
 
-    // Update Tabel Gizi
     energiKecil.textContent = data.gizi.energi.kecil;
     energiBesar.textContent = data.gizi.energi.besar;
     energiBumil.textContent = data.gizi.energi.bumil;
@@ -176,20 +172,15 @@ function updateTampilan(keyHari) {
     seratBalita.textContent = data.gizi.serat.balita;
 }
 
-// Event Listener untuk Tombol Hari
 buttons.forEach(button => {
     button.addEventListener('click', function() {
-        // Hapus status active dari semua tombol
         buttons.forEach(btn => btn.classList.remove('active'));
-
-        // Tambah status active ke tombol yang diklik
         this.classList.add('active');
 
-        // Ambil data-hari dan update seluruh isi halaman
         const hariDipilih = this.getAttribute('data-hari');
         updateTampilan(hariDipilih);
     });
 });
 
-// Set tampilan awal ke hari Senin saat pertama kali dibuka
+// Set default awal ke hari Senin
 updateTampilan('senin');

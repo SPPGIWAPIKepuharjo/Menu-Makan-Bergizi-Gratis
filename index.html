@@ -28,80 +28,78 @@
             </div>
         </section>
 
-        <!-- Peringatan / Imbauan -->
+        <!-- Peringatan Alergi -->
         <section class="card warning-card">
-            <h3>⚠️ Wajib diperhatikan</h3>
+            <h3>⚠️ PERATURAN & PERINGATAN ALERGI</h3>
             <ol>
-                <li><strong>Makan sekarang, di sekolah:</strong> Habiskan paling lambat 2 jam setelah ompreng diterima.</li>
-                <li><strong>Jangan dibawa pulang:</strong> Makanan yang dibawa pulang cepat basi dan berisiko menyebabkan sakit perut.</li>
-                <li><strong>Ompreng dikembalikan:</strong> Setelah selesai makan, kembalikan ompreng ke petugas.</li>
+                <li>Menu di bawah dapat mengandung bahan pemicu alergi seperti telur, susu, kacang, gandum, atau makanan laut.</li>
+                <li>Jika siswa memiliki riwayat alergi, harap segera beri tahu petugas SPPG atau guru pendamping.</li>
             </ol>
         </section>
 
-        <!-- Isi Ompreng Hari Ini -->
+        <!-- Komposisi Menu -->
         <section class="card">
-            <h3>ISI OMPRENG HARI INI</h3>
+            <h3>Komposisi Menu</h3>
             <div class="menu-grid">
                 <div class="grid-item">
-                    <span>LAUK HEWANI</span>
-                    <strong id="lauk-hewani">Dimsum Ayam</strong>
+                    <span>KARBOHIDRAT</span>
+                    <strong id="karbo-text">Nasi Putih</strong>
                 </div>
                 <div class="grid-item">
-                    <span>LAUK NABATI</span>
-                    <strong id="lauk-nabati">Tempe Oreg</strong>
+                    <span>LAUK UTAMA</span>
+                    <strong id="lauk-utama-text">Ayam Goreng</strong>
+                </div>
+                <div class="grid-item">
+                    <span>LAUK PENDAMPING</span>
+                    <strong id="lauk-pendamping-text">Tahu Goreng</strong>
                 </div>
                 <div class="grid-item">
                     <span>SAYUR</span>
-                    <strong id="sayur">Sayur Bening Labu Kuning</strong>
+                    <strong id="sayur-text">Tumis Buncis</strong>
                 </div>
                 <div class="grid-item">
                     <span>BUAH</span>
-                    <strong id="buah">Jeruk Madu Siam</strong>
+                    <strong id="buah-text">Pisang</strong>
+                </div>
+                <div class="grid-item">
+                    <span>MINUMAN</span>
+                    <strong id="minuman-text">Susu UHT</strong>
                 </div>
             </div>
         </section>
 
-        <!-- Tabel Kandungan Gizi -->
+        <!-- Kandungan Gizi -->
         <section class="card">
-            <h3>KANDUNGAN GIZI PER PORSI</h3>
+            <h3>Kandungan Gizi</h3>
             <table class="gizi-table">
                 <thead>
                     <tr>
-                        <th>Gizi</th>
-                        <th>Kecil (PAUD-SD3)</th>
-                        <th>Besar (SD4-SMA)</th>
+                        <th>AKG / Porsi</th>
+                        <th>Energi</th>
+                        <th>Protein</th>
+                        <th>Lemak</th>
+                        <th>Karbohidrat</th>
+                        <th>Serat</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Energi (kcal)</td>
-                        <td id="energi-k">448.19</td>
-                        <td id="energi-b">736.55</td>
-                    </tr>
-                    <tr>
-                        <td>Protein (gram)</td>
-                        <td id="protein-k">15.13</td>
-                        <td id="protein-b">25.03</td>
-                    </tr>
-                    <tr>
-                        <td>Serat (gram)</td>
-                        <td id="serat-k">3.21</td>
-                        <td id="serat-b">4.49</td>
+                        <td>Satuan</td>
+                        <td id="energi-text">650 kcal</td>
+                        <td id="protein-text">25g</td>
+                        <td id="lemak-text">20g</td>
+                        <td id="karbo-gizi-text">80g</td>
+                        <td id="serat-text">4g</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- Navigasi Hari / Tanggal -->
-        <section class="card nav-section">
-            <h3>MENU MINGGU INI</h3>
-            <div class="date-picker">
-                <button onclick="changeMenu('senin')">SEN<br>24</button>
-                <button onclick="changeMenu('selasa')">SEL<br>25</button>
-                <button onclick="changeMenu('rabu')">RAB<br>26</button>
-                <button class="active" onclick="changeMenu('kamis')">KAM<br>27</button>
-                <button onclick="changeMenu('jumat')">JUM<br>28</button>
-            </div>
+        <section class="date-picker">
+            <button class="btn-hari active" data-hari="kamis">Kamis<br><small>27 Ags</small></button>
+            <button class="btn-hari" data-hari="jumat">Jumat<br><small>28 Ags</small></button>
+            <button class="btn-hari" data-hari="sabtu">Sabtu<br><small>29 Ags</small></button>
         </section>
     </div>
 

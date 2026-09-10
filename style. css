@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #0b192c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.card {
+    background-color: #1e293b;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+
+.warning-card {
+    background-color: #450a0a;
+    border: 1px solid #991b1b;
+}
+
+.warning-card h3 {
+    color: #f87171;
+    margin-bottom: 8px;
+}
+
+.warning-card ol {
+    padding-left: 18px;
+    font-size: 12px;
+    color: #fca5a5;
+    line-height: 1.5;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.grid-item {
+    background-color: #334155;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item span {
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+.grid-item strong {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.gizi-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: center;
+}
+
+.gizi-table th, .gizi-table td {
+    padding: 8px;
+    border-bottom: 1px solid #334155;
+}
+
+.date-picker {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.date-picker button {
+    background-color: #334155;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.date-picker button.active {
+    background-color: #2563eb;
+    font-weight: bold;
+}

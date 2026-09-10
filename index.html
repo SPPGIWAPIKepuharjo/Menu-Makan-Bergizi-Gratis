@@ -9,26 +9,53 @@
 <body>
 
     <div class="card">
-        <!-- Badge Status Halal & BPOM -->
-        <div class="top-badge">
-            <span class="badge yellow">⚡ Halal & Gizi Seimbang</span>
+        <!-- HEADER INSTANSI -->
+        <header class="header-container">
+            <img src="logo.png" alt="Logo" class="header-logo">
+            <div class="header-text">
+                <span class="tagline">MAKAN BERGIZI GRATIS</span>
+                <h1 class="instansi-title">SPPG Bantaeng Gantarangkeke 1</h1>
+                <p class="yayasan-subtitle">Yayasan Tunas Ilmu Bantaeng</p>
+            </div>
+        </header>
+
+        <!-- HARI & TANGGAL -->
+        <div class="date-header">
+            <h2 id="hari-text" class="day">Kamis</h2>
+            <p id="tanggal-text" class="date">27 Agustus 2026</p>
         </div>
 
-        <!-- Judul & Sub-judul -->
-        <h1 class="title">Informasi Kandungan Gizi SPPG</h1>
-        <p class="subtitle">Satuan Pelayanan Pemenuhan Gizi</p>
+        <hr class="divider">
 
-        <!-- Foto & Nama Menu Utama -->
+        <!-- FOTO MENU -->
         <div class="image-container">
             <img id="foto-menu" src="martabak.jpg" alt="Foto Menu">
-            <div class="image-overlay">
-                <p id="hari-text" class="day">Senin</p>
-                <p id="tanggal-text" class="date">24 Agustus 2026</p>
-            </div>
         </div>
 
-        <!-- Komposisi Menu -->
-        <div class="section-title">Komposisi Hidangan Harian</div>
+        <!-- KOTAK WAJIB DIPERHATIKAN -->
+        <div class="warning-box">
+            <div class="warning-title">
+                <span class="warning-icon">⚠️</span>
+                <span>Wajib diperhatikan</span>
+            </div>
+            <ol class="warning-list">
+                <li>
+                    <strong>Makan sekarang, di sekolah</strong>
+                    <p>Habiskan paling lambat 2 jam setelah ompreng diterima. Makanan ini dimasak tanpa bahan pengawet.</p>
+                </li>
+                <li>
+                    <strong>Jangan dibawa pulang</strong>
+                    <p>Makanan yang dibawa pulang cepat basi dan berisiko menyebabkan sakit perut atau keracunan.</p>
+                </li>
+                <li>
+                    <strong>Ompreng dikembalikan ke petugas</strong>
+                    <p>Setelah selesai makan, kembalikan ompreng ke petugas.</p>
+                </li>
+            </ol>
+        </div>
+
+        <!-- KOMPOSISI MENU -->
+        <div class="section-title">ISI OMPRENG HARI INI</div>
         <div class="menu-grid">
             <div class="menu-item">
                 <span class="icon">🍚</span>
@@ -74,9 +101,8 @@
             </div>
         </div>
 
-        <!-- Tabel Nilai Gizi -->
-        <div class="section-title">Rincian AKG Berdasarkan Porsi</div>
-        
+        <!-- TABEL NILAI GIZI -->
+        <div class="section-title">RINCIAN AKG BERDASARKAN PORSI</div>
         <div class="table-responsive">
             <table>
                 <thead>
@@ -128,12 +154,11 @@
             </table>
         </div>
 
-        <!-- Catatan Tambahan -->
         <div class="info-footer">
             <p>* AKG (Angka Kecukupan Gizi) dihitung berdasarkan standar Kementerian Kesehatan RI.</p>
         </div>
 
-        <!-- Navigasi Hari / Tanggal (Senin - Jumat) -->
+        <!-- NAVIGASI TOMBOL HARI -->
         <section class="date-picker">
             <button class="btn-hari active" data-hari="senin">Senin<br><small>24 Ags</small></button>
             <button class="btn-hari" data-hari="selasa">Selasa<br><small>25 Ags</small></button>

@@ -3,131 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Makan Bergizi Gratis</title>
+    <title>Informasi Gizi SPPG</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <img src="logo-bgn.png" alt="Logo BGN" class="logo">
-            <div class="header-text">
-                <span class="badge-text">MAKAN BERGIZI GRATIS</span>
-                <h2>SPPG Kepuharjo 1 Lumajang</h2>
-                <p class="yayasan-text">Yayasan Asa Nusantara Berdikari</p>
-            </div>
-        </header>
+    <div class="card">
+        <!-- Badge Status Halal & BPOM -->
+        <div class="top-badge">
+            <span class="badge yellow">⚡ Halal & Gizi Seimbang</span>
+        </div>
 
-        <!-- Informasi Hari & Foto -->
-        <section class="card content-card">
-            <h1 id="hari-text">Kamis</h1>
-            <p id="tanggal-text" class="subtext">27 Agustus 2026</p>
-            <div class="image-container">
-                <img id="foto-menu" src="martabak.jpg" alt="Foto Menu">
-            </div>
-        </section>
+        <!-- Judul & Sub-judul -->
+        <h1 class="title">Informasi Kandungan Gizi SPPG</h1>
+        <p class="subtitle">Satuan Pelayanan Pemenuhan Gizi</p>
 
-        <!-- Wajib Diperhatikan -->
-        <section class="card warning-card">
-            <h3>⚠️ Wajib diperhatikan</h3>
-            <ol>
-                <li><strong>Makan sekarang, di sekolah</strong><br>Habiskan paling lambat 2 jam setelah ompreng diterima. Makanan ini dimasak tanpa bahan pengawet.</li>
-                <li><strong>Jangan dibawa pulang</strong><br>Makanan yang dibawa pulang cepat basi dan berisiko menyebabkan sakit perut atau keracunan.</li>
-                <li><strong>Ompreng dikembalikan ke petugas</strong><br>Setelah selesai makan, kembalikan ompreng ke petugas.</li>
-            </ol>
-        </section>
+        <!-- Foto & Nama Menu Utama -->
+        <div class="image-container">
+            <img id="foto-menu" src="martabak.jpg" alt="Foto Menu">
+            <div class="image-overlay">
+                <p id="hari-text" class="day">Senin</p>
+                <p id="tanggal-text" class="date">24 Agustus 2026</p>
+            </div>
+        </div>
 
         <!-- Komposisi Menu -->
-        <section class="card">
-            <h3>Isi Ompreng Hari Ini</h3>
-            <div class="menu-grid">
-                <div class="grid-item">
-                    <span>KARBOHIDRAT</span>
-                    <strong id="karbo-text">Nasi Putih</strong>
-                </div>
-                <div class="grid-item">
-                    <span>LAUK UTAMA</span>
-                    <strong id="lauk-utama-text">Ayam Goreng</strong>
-                </div>
-                <div class="grid-item">
-                    <span>LAUK PENDAMPING</span>
-                    <strong id="lauk-pendamping-text">Tahu Goreng</strong>
-                </div>
-                <div class="grid-item">
-                    <span>SAYUR</span>
-                    <strong id="sayur-text">Tumis Buncis</strong>
-                </div>
-                <div class="grid-item">
-                    <span>BUAH</span>
-                    <strong id="buah-text">Pisang</strong>
-                </div>
-                <div class="grid-item">
-                    <span>MINUMAN</span>
-                    <strong id="minuman-text">Susu UHT</strong>
+        <div class="section-title">Komposisi Hidangan Harian</div>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <span class="icon">🍚</span>
+                <div>
+                    <small>Karbohidrat</small>
+                    <p id="karbo-text">Nasi Putih</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Kandungan Gizi (5 Kolom Nutrisi + 4 Porsi) -->
-        <section class="card">
-            <h3>Kandungan Gizi per Porsi</h3>
-            <div class="table-wrapper">
-                <table class="gizi-table">
-                    <thead>
-                        <tr>
-                            <th style="text-align: left;">Kategori Porsi</th>
-                            <th>Energi</th>
-                            <th>Protein</th>
-                            <th>Lemak</th>
-                            <th>Karbo</th>
-                            <th>Serat</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="porsi-label">Porsi Kecil</td>
-                            <td id="energi-kecil">450 kcal</td>
-                            <td id="protein-kecil">15g</td>
-                            <td id="lemak-kecil">12g</td>
-                            <td id="karbo-kecil">55g</td>
-                            <td id="serat-kecil">3g</td>
-                        </tr>
-                        <tr>
-                            <td class="porsi-label">Porsi Besar</td>
-                            <td id="energi-besar">650 kcal</td>
-                            <td id="protein-besar">25g</td>
-                            <td id="lemak-besar">20g</td>
-                            <td id="karbo-besar">80g</td>
-                            <td id="serat-besar">5g</td>
-                        </tr>
-                        <tr>
-                            <td class="porsi-label">Ibu Hamil & Menyusui</td>
-                            <td id="energi-bumil">750 kcal</td>
-                            <td id="protein-bumil">30g</td>
-                            <td id="lemak-bumil">25g</td>
-                            <td id="karbo-bumil">90g</td>
-                            <td id="serat-bumil">6g</td>
-                        </tr>
-                        <tr>
-                            <td class="porsi-label">Balita</td>
-                            <td id="energi-balita">350 kcal</td>
-                            <td id="protein-balita">12g</td>
-                            <td id="lemak-balita">10g</td>
-                            <td id="karbo-balita">45g</td>
-                            <td id="serat-balita">2g</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="menu-item">
+                <span class="icon">🍗</span>
+                <div>
+                    <small>Lauk Utama</small>
+                    <p id="lauk-utama-text">Ayam Semur</p>
+                </div>
             </div>
-        </section>
+            <div class="menu-item">
+                <span class="icon">🍢</span>
+                <div>
+                    <small>Lauk Pendamping</small>
+                    <p id="lauk-pendamping-text">Tahu Bacem</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span class="icon">🥦</span>
+                <div>
+                    <small>Sayur</small>
+                    <p id="sayur-text">Sayur Bening Bayam</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span class="icon">🍌</span>
+                <div>
+                    <small>Buah Segar</small>
+                    <p id="buah-text">Pisang Ambon</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <span class="icon">🥛</span>
+                <div>
+                    <small>Pelengkap</small>
+                    <p id="minuman-text">Susu UHT</p>
+                </div>
+            </div>
+        </div>
 
-        <!-- Navigasi Hari / Tanggal -->
+        <!-- Tabel Nilai Gizi -->
+        <div class="section-title">Rincian AKG Berdasarkan Porsi</div>
+        
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter Gizi</th>
+                        <th>Porsi Kecil<br><small>(PAUD / SD 1-3)</small></th>
+                        <th>Porsi Besar<br><small>(SD 4-6 / SMP / SMA)</small></th>
+                        <th>Bumil & Busui<br><small>(Ibu Hamil / Menyusui)</small></th>
+                        <th>Balita<br><small>(1-5 Tahun)</small></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Energi Total</strong></td>
+                        <td id="energi-kecil">440 kcal</td>
+                        <td id="energi-besar">640 kcal</td>
+                        <td id="energi-bumil">740 kcal</td>
+                        <td id="energi-balita">340 kcal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Protein</strong></td>
+                        <td id="protein-kecil">16g</td>
+                        <td id="protein-besar">24g</td>
+                        <td id="protein-bumil">29g</td>
+                        <td id="protein-balita">12g</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lemak Total</strong></td>
+                        <td id="lemak-kecil">11g</td>
+                        <td id="lemak-besar">19g</td>
+                        <td id="lemak-bumil">24g</td>
+                        <td id="lemak-balita">9g</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Karbohidrat</strong></td>
+                        <td id="karbo-kecil">54g</td>
+                        <td id="karbo-besar">78g</td>
+                        <td id="karbo-bumil">88g</td>
+                        <td id="karbo-balita">44g</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Serat Pangan</strong></td>
+                        <td id="serat-kecil">3g</td>
+                        <td id="serat-besar">5g</td>
+                        <td id="serat-bumil">6g</td>
+                        <td id="serat-balita">2g</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Catatan Tambahan -->
+        <div class="info-footer">
+            <p>* AKG (Angka Kecukupan Gizi) dihitung berdasarkan standar Kementerian Kesehatan RI.</p>
+        </div>
+
+        <!-- Navigasi Hari / Tanggal (Senin - Jumat) -->
         <section class="date-picker">
-            <button class="btn-hari active" data-hari="kamis">Kamis<br><small>27 Ags</small></button>
+            <button class="btn-hari active" data-hari="senin">Senin<br><small>24 Ags</small></button>
+            <button class="btn-hari" data-hari="selasa">Selasa<br><small>25 Ags</small></button>
+            <button class="btn-hari" data-hari="rabu">Rabu<br><small>26 Ags</small></button>
+            <button class="btn-hari" data-hari="kamis">Kamis<br><small>27 Ags</small></button>
             <button class="btn-hari" data-hari="jumat">Jumat<br><small>28 Ags</small></button>
-            <button class="btn-hari" data-hari="sabtu">Sabtu<br><small>29 Ags</small></button>
         </section>
+
     </div>
 
     <script src="script.js"></script>

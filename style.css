@@ -2,34 +2,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-    background-color: #0b192c;
+    background-color: #0d1b2a;
     color: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 12px;
 }
 
 .container {
     width: 100%;
-    max-width: 420px;
+    max-width: 400px;
 }
 
+/* Header */
 .header {
-   .header {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 16px;
+    padding: 4px 0;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     object-fit: contain;
 }
 
@@ -39,41 +39,55 @@ body {
 }
 
 .badge-text {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
-    color: #ffb703;
+    color: #f59e0b;
     letter-spacing: 0.5px;
 }
 
 .header-text h2 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: #ffffff;
+    line-height: 1.2;
     margin: 2px 0;
 }
 
 .yayasan-text {
     font-size: 11px;
-    color: #cbd5e1;
+    color: #94a3b8;
 }
 
-.badge {
-    display: inline-block;
-    background-color: #ff9800;
-    color: #fff;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 3px 8px;
-    border-radius: 4px;
-}
-
+/* Card General */
 .card {
-    background-color: #1e293b;
+    background-color: #1b263b;
     border-radius: 16px;
     padding: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
+#hari-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.subtext {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 12px;
+}
+
+/* Batasi Ukuran Gambar Agar Tidak Meleber */
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Warning Card */
 .warning-card {
     background-color: #450a0a;
     border: 1px solid #991b1b;
@@ -81,31 +95,27 @@ body {
 
 .warning-card h3 {
     color: #f87171;
+    font-size: 13px;
     margin-bottom: 8px;
 }
 
 .warning-card ol {
     padding-left: 18px;
-    font-size: 12px;
+    font-size: 11px;
     color: #fca5a5;
     line-height: 1.5;
 }
 
-.image-container img {
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 10px;
-}
-
+/* Menu Grid */
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 8px;
     margin-top: 10px;
 }
 
 .grid-item {
-    background-color: #334155;
+    background-color: #0d1b2a;
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -113,45 +123,56 @@ body {
 }
 
 .grid-item span {
-    font-size: 10px;
+    font-size: 9px;
     color: #94a3b8;
+    font-weight: 600;
 }
 
 .grid-item strong {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 4px;
+    color: #f8fafc;
 }
 
+/* Table Gizi */
 .gizi-table {
     width: 100%;
     margin-top: 10px;
     border-collapse: collapse;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
 }
 
 .gizi-table th, .gizi-table td {
-    padding: 8px;
+    padding: 6px;
     border-bottom: 1px solid #334155;
 }
 
+.gizi-table th {
+    color: #94a3b8;
+}
+
+/* Date Picker */
 .date-picker {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    gap: 4px;
 }
 
 .date-picker button {
-    background-color: #334155;
+    flex: 1;
+    background-color: #0d1b2a;
     border: none;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 10px;
-    font-size: 11px;
+    color: #94a3b8;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-size: 10px;
     cursor: pointer;
 }
 
 .date-picker button.active {
     background-color: #2563eb;
+    color: #ffffff;
     font-weight: bold;
 }

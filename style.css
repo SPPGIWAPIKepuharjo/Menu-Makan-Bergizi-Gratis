@@ -1,178 +1,219 @@
+/* RESET & BASIC STYLES */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #0d1b2a;
+    background-color: #0b132b;
     color: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 12px;
-}
-
-.container {
-    width: 100%;
-    max-width: 400px;
-}
-
-/* Header */
-.header {
-    display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-    padding: 4px 0;
+    min-height: 100vh;
+    padding: 15px;
 }
 
-.logo {
-    width: 44px;
-    height: 44px;
-    object-fit: contain;
+/* CARD CONTAINER */
+.card {
+    background-color: #1c2541;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-.header-text {
-    display: flex;
-    flex-direction: column;
+/* BADGE */
+.top-badge {
+    margin-bottom: 10px;
 }
 
-.badge-text {
-    font-size: 10px;
+.badge {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.badge.yellow {
+    background-color: #f59e0b;
+    color: #000000;
+}
+
+/* TITLE */
+.title {
+    font-size: 20px;
     font-weight: 700;
-    color: #f59e0b;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+/* FOTO MENU & OVERLAY */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    padding: 15px;
+}
+
+.image-overlay .day {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.image-overlay .date {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #60a5fa;
+    margin-bottom: 10px;
+    text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-.header-text h2 {
-    font-size: 15px;
-    font-weight: bold;
-    color: #ffffff;
-    line-height: 1.2;
-    margin: 2px 0;
-}
-
-.yayasan-text {
-    font-size: 11px;
-    color: #94a3b8;
-}
-
-/* Card General */
-.card {
-    background-color: #1b263b;
-    border-radius: 16px;
-    padding: 16px;
-    margin-bottom: 14px;
-}
-
-#hari-text {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.subtext {
-    font-size: 12px;
-    color: #94a3b8;
-    margin-bottom: 12px;
-}
-
-/* Batasi Ukuran Gambar Agar Tidak Meleber */
-.image-container img {
-    width: 100%;
-    height: auto;
-    max-height: 260px;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-}
-
-/* Warning Card */
-.warning-card {
-    background-color: #450a0a;
-    border: 1px solid #991b1b;
-}
-
-.warning-card h3 {
-    color: #f87171;
-    font-size: 13px;
-    margin-bottom: 8px;
-}
-
-.warning-card ol {
-    padding-left: 18px;
-    font-size: 11px;
-    color: #fca5a5;
-    line-height: 1.5;
-}
-
-/* Menu Grid */
+/* GRID KOMPOSISI MENU */
 .menu-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.grid-item {
-    background-color: #0d1b2a;
+.menu-item {
+    background-color: #0b132b;
     padding: 10px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.grid-item span {
-    font-size: 9px;
+.menu-item .icon {
+    font-size: 20px;
+}
+
+.menu-item small {
+    display: block;
+    font-size: 10px;
     color: #94a3b8;
-    font-weight: 600;
 }
 
-.grid-item strong {
+.menu-item p {
     font-size: 12px;
-    margin-top: 4px;
-    color: #f8fafc;
+    font-weight: 600;
+    color: #ffffff;
 }
 
-/* Table Gizi */
-.gizi-table {
+/* TABEL NILAI GIZI */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+table {
     width: 100%;
-    margin-top: 10px;
     border-collapse: collapse;
+    background-color: #0b132b;
     font-size: 11px;
+}
+
+th, td {
+    padding: 10px 8px;
     text-align: center;
+    border-bottom: 1px solid #1c2541;
 }
 
-.gizi-table th, .gizi-table td {
-    padding: 6px;
-    border-bottom: 1px solid #334155;
+th {
+    background-color: #1e293b;
+    color: #60a5fa;
+    font-weight: bold;
 }
 
-.gizi-table th {
+th small {
+    font-weight: normal;
     color: #94a3b8;
+    font-size: 9px;
 }
 
-/* Date Picker */
+td:first-child {
+    text-align: left;
+    color: #cbd5e1;
+}
+
+/* FOOTER INFO */
+.info-footer {
+    font-size: 10px;
+    color: #64748b;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* NAVIGASI TOMBOL HARI (SENIN - JUMAT) */
 .date-picker {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    gap: 4px;
+    gap: 5px;
 }
 
 .date-picker button {
     flex: 1;
-    background-color: #0d1b2a;
-    border: none;
+    background-color: #0b132b;
+    border: 1px solid #334155;
     color: #94a3b8;
-    padding: 8px 0;
-    border-radius: 8px;
-    font-size: 10px;
+    padding: 10px 2px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
     cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.date-picker button small {
+    display: block;
+    font-weight: normal;
+    font-size: 9px;
+    margin-top: 2px;
+    opacity: 0.8;
 }
 
 .date-picker button.active {
     background-color: #2563eb;
     color: #ffffff;
-    font-weight: bold;
+    border-color: #3b82f6;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
 }

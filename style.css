@@ -1,4 +1,3 @@
-/* RESET & BASIC STYLES */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,213 +6,278 @@
 }
 
 body {
-    background-color: #0b132b;
-    color: #ffffff;
+    /* Background biru terang gradasi dengan pola batik/motif SVG modern */
+    background-color: #79b7eb;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.4) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(13, 71, 161, 0.15) 0%, transparent 25%),
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0C62.0914 0 80 17.9086 80 40C80 62.0914 62.0914 80 40 80C17.9086 80 0 62.0914 0 40C0 17.9086 17.9086 0 40 0ZM40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10Z' fill='%200a3871' fill-opacity='0.05'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    color: #1e293b;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 15px;
+    padding: 12px;
 }
 
-/* CARD CONTAINER */
 .card {
-    background-color: #1c2541;
+    background: #eef6ff;
     max-width: 480px;
     width: 100%;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(10, 38, 71, 0.2);
+    border: 2px solid #ffffff;
 }
 
-/* BADGE */
-.top-badge {
-    margin-bottom: 10px;
+/* HEADER INSTANSI */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
 }
 
-.badge {
+.header-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.tagline {
+    font-size: 10px;
+    font-weight: 800;
+    color: #0284c7;
+    letter-spacing: 0.5px;
+}
+
+.instansi-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.yayasan-subtitle {
     font-size: 11px;
-    font-weight: bold;
-    padding: 5px 12px;
-    border-radius: 20px;
-    display: inline-block;
+    color: #475569;
+    font-weight: 600;
 }
 
-.badge.yellow {
-    background-color: #f59e0b;
-    color: #000000;
+/* TANGGAL & GARIS */
+.date-header {
+    margin-bottom: 8px;
 }
 
-/* TITLE */
-.title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 2px;
+.day {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0369a1;
 }
 
-.subtitle {
+.date {
     font-size: 12px;
-    color: #94a3b8;
-    margin-bottom: 15px;
+    color: #334155;
+    font-weight: 600;
 }
 
-/* FOTO MENU & OVERLAY */
+.divider {
+    border: none;
+    border-top: 2px solid #bde0fe;
+    margin-bottom: 14px;
+}
+
+/* FOTO MENU */
 .image-container {
-    position: relative;
     width: 100%;
-    height: 220px;
     border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .image-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     object-fit: cover;
 }
 
-.image-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
-    padding: 15px;
+/* WAJIB DIPERHATIKAN (WARNING BOX) */
+.warning-box {
+    background-color: #fef2f2;
+    border: 1.5px solid #fca5a5;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 20px;
 }
 
-.image-overlay .day {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.image-overlay .date {
-    font-size: 12px;
-    color: #cbd5e1;
-}
-
-/* SECTION TITLE */
-.section-title {
+.warning-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #dc2626;
+    font-weight: 800;
     font-size: 14px;
-    font-weight: 600;
-    color: #60a5fa;
     margin-bottom: 10px;
-    text-transform: uppercase;
+}
+
+.warning-list {
+    padding-left: 18px;
+    color: #7f1d1d;
+    font-size: 12px;
+}
+
+.warning-list li {
+    margin-bottom: 8px;
+}
+
+.warning-list li:last-child {
+    margin-bottom: 0;
+}
+
+.warning-list strong {
+    color: #991b1b;
+    display: block;
+    font-size: 12px;
+}
+
+.warning-list p {
+    color: #450a0a;
+    font-size: 11px;
+    margin-top: 2px;
+    line-height: 1.35;
+}
+
+/* SECTION TITLE & GRID */
+.section-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #0284c7;
+    margin-bottom: 10px;
     letter-spacing: 0.5px;
 }
 
-/* GRID KOMPOSISI MENU */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
 .menu-item {
-    background-color: #0b132b;
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    border: 1px solid #bae6fd;
 }
 
 .menu-item .icon {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .menu-item small {
     display: block;
-    font-size: 10px;
-    color: #94a3b8;
+    font-size: 9px;
+    color: #64748b;
+    font-weight: 600;
 }
 
 .menu-item p {
-    font-size: 12px;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    color: #0f172a;
 }
 
-/* TABEL NILAI GIZI */
+/* TABEL GIZI */
 .table-responsive {
     overflow-x: auto;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     border-radius: 10px;
+    border: 1px solid #bae6fd;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #0b132b;
+    background-color: #ffffff;
     font-size: 11px;
 }
 
 th, td {
-    padding: 10px 8px;
+    padding: 8px 6px;
     text-align: center;
-    border-bottom: 1px solid #1c2541;
+    border-bottom: 1px solid #e0f2fe;
 }
 
 th {
-    background-color: #1e293b;
-    color: #60a5fa;
-    font-weight: bold;
+    background-color: #0284c7;
+    color: #ffffff;
+    font-weight: 700;
 }
 
 th small {
+    font-size: 8px;
+    color: #e0f2fe;
     font-weight: normal;
-    color: #94a3b8;
-    font-size: 9px;
 }
 
 td:first-child {
     text-align: left;
-    color: #cbd5e1;
+    color: #1e293b;
+    background-color: #f0f9ff;
 }
 
-/* FOOTER INFO */
 .info-footer {
-    font-size: 10px;
-    color: #64748b;
-    margin-bottom: 20px;
-    line-height: 1.4;
+    font-size: 9px;
+    color: #475569;
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 
-/* NAVIGASI TOMBOL HARI (SENIN - JUMAT) */
+/* DATE PICKER */
 .date-picker {
     display: flex;
-    justify-content: space-between;
     gap: 5px;
 }
 
 .date-picker button {
     flex: 1;
-    background-color: #0b132b;
-    border: 1px solid #334155;
-    color: #94a3b8;
-    padding: 10px 2px;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1.5px solid #bae6fd;
+    color: #0369a1;
+    padding: 8px 2px;
+    border-radius: 8px;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    text-align: center;
     transition: all 0.2s ease;
 }
 
 .date-picker button small {
     display: block;
+    font-size: 8px;
     font-weight: normal;
-    font-size: 9px;
+    color: #64748b;
     margin-top: 2px;
-    opacity: 0.8;
 }
 
 .date-picker button.active {
-    background-color: #2563eb;
+    background-color: #0284c7;
     color: #ffffff;
-    border-color: #3b82f6;
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+    border-color: #0284c7;
+    box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+}
+
+.date-picker button.active small {
+    color: #e0f2fe;
 }

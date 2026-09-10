@@ -19,8 +19,42 @@ body {
 }
 
 .header {
-    text-align: center;
-    margin-bottom: 15px;
+   .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffb703;
+    letter-spacing: 0.5px;
+}
+
+.header-text h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 2px 0;
+}
+
+.yayasan-text {
+    font-size: 11px;
+    color: #cbd5e1;
 }
 
 .badge {

@@ -28,18 +28,19 @@
             </div>
         </section>
 
-        <!-- Peringatan Alergi -->
+        <!-- Wajib Diperhatikan -->
         <section class="card warning-card">
-            <h3>⚠️ PERATURAN & PERINGATAN ALERGI</h3>
+            <h3>⚠️ Wajib diperhatikan</h3>
             <ol>
-                <li>Menu di bawah dapat mengandung bahan pemicu alergi seperti telur, susu, kacang, gandum, atau makanan laut.</li>
-                <li>Jika siswa memiliki riwayat alergi, harap segera beri tahu petugas SPPG atau guru pendamping.</li>
+                <li><strong>Makan sekarang, di sekolah</strong><br>Habiskan paling lambat 2 jam setelah ompreng diterima. Makanan ini dimasak tanpa bahan pengawet.</li>
+                <li><strong>Jangan dibawa pulang</strong><br>Makanan yang dibawa pulang cepat basi dan berisiko menyebabkan sakit perut atau keracunan.</li>
+                <li><strong>Ompreng dikembalikan ke petugas</strong><br>Setelah selesai makan, kembalikan ompreng ke petugas.</li>
             </ol>
         </section>
 
         <!-- Komposisi Menu -->
         <section class="card">
-            <h3>Komposisi Menu</h3>
+            <h3>Isi Ompreng Hari Ini</h3>
             <div class="menu-grid">
                 <div class="grid-item">
                     <span>KARBOHIDRAT</span>
@@ -68,31 +69,57 @@
             </div>
         </section>
 
-        <!-- Kandungan Gizi -->
+        <!-- Kandungan Gizi (5 Kolom Nutrisi + 4 Porsi) -->
         <section class="card">
-            <h3>Kandungan Gizi</h3>
-            <table class="gizi-table">
-                <thead>
-                    <tr>
-                        <th>AKG / Porsi</th>
-                        <th>Energi</th>
-                        <th>Protein</th>
-                        <th>Lemak</th>
-                        <th>Karbohidrat</th>
-                        <th>Serat</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Satuan</td>
-                        <td id="energi-text">650 kcal</td>
-                        <td id="protein-text">25g</td>
-                        <td id="lemak-text">20g</td>
-                        <td id="karbo-gizi-text">80g</td>
-                        <td id="serat-text">4g</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Kandungan Gizi per Porsi</h3>
+            <div class="table-wrapper">
+                <table class="gizi-table">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left;">Kategori Porsi</th>
+                            <th>Energi</th>
+                            <th>Protein</th>
+                            <th>Lemak</th>
+                            <th>Karbo</th>
+                            <th>Serat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="porsi-label">Porsi Kecil</td>
+                            <td id="energi-kecil">450 kcal</td>
+                            <td id="protein-kecil">15g</td>
+                            <td id="lemak-kecil">12g</td>
+                            <td id="karbo-kecil">55g</td>
+                            <td id="serat-kecil">3g</td>
+                        </tr>
+                        <tr>
+                            <td class="porsi-label">Porsi Besar</td>
+                            <td id="energi-besar">650 kcal</td>
+                            <td id="protein-besar">25g</td>
+                            <td id="lemak-besar">20g</td>
+                            <td id="karbo-besar">80g</td>
+                            <td id="serat-besar">5g</td>
+                        </tr>
+                        <tr>
+                            <td class="porsi-label">Ibu Hamil & Menyusui</td>
+                            <td id="energi-bumil">750 kcal</td>
+                            <td id="protein-bumil">30g</td>
+                            <td id="lemak-bumil">25g</td>
+                            <td id="karbo-bumil">90g</td>
+                            <td id="serat-bumil">6g</td>
+                        </tr>
+                        <tr>
+                            <td class="porsi-label">Balita</td>
+                            <td id="energi-balita">350 kcal</td>
+                            <td id="protein-balita">12g</td>
+                            <td id="lemak-balita">10g</td>
+                            <td id="karbo-balita">45g</td>
+                            <td id="serat-balita">2g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <!-- Navigasi Hari / Tanggal -->

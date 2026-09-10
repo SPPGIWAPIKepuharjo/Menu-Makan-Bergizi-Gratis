@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makan Bergizi Gratis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="badge">MAKAN BERGIZI GRATIS</div>
+            <h2>SPPG IWAPI Kepuharjo</h2>
+        </header>
+
+        <!-- Informasi Hari & Foto -->
+        <section class="card content-card">
+            <h1 id="hari-text">Kamis</h1>
+            <p id="tanggal-text" class="subtext">27 Agustus 2026</p>
+            <div class="image-container">
+                <img id="foto-menu" src="menu.jpg" alt="Foto Menu">
+            </div>
+        </section>
+
+        <!-- Peringatan / Imbauan -->
+        <section class="card warning-card">
+            <h3>⚠️ Wajib diperhatikan</h3>
+            <ol>
+                <li><strong>Makan sekarang, di sekolah:</strong> Habiskan paling lambat 2 jam setelah ompreng diterima.</li>
+                <li><strong>Jangan dibawa pulang:</strong> Makanan yang dibawa pulang cepat basi dan berisiko menyebabkan sakit perut.</li>
+                <li><strong>Ompreng dikembalikan:</strong> Setelah selesai makan, kembalikan ompreng ke petugas.</li>
+            </ol>
+        </section>
+
+        <!-- Isi Ompreng Hari Ini -->
+        <section class="card">
+            <h3>ISI OMPRENG HARI INI</h3>
+            <div class="menu-grid">
+                <div class="grid-item">
+                    <span>LAUK HEWANI</span>
+                    <strong id="lauk-hewani">Dimsum Ayam</strong>
+                </div>
+                <div class="grid-item">
+                    <span>LAUK NABATI</span>
+                    <strong id="lauk-nabati">Tempe Oreg</strong>
+                </div>
+                <div class="grid-item">
+                    <span>SAYUR</span>
+                    <strong id="sayur">Sayur Bening Labu Kuning</strong>
+                </div>
+                <div class="grid-item">
+                    <span>BUAH</span>
+                    <strong id="buah">Jeruk Madu Siam</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabel Kandungan Gizi -->
+        <section class="card">
+            <h3>KANDUNGAN GIZI PER PORSI</h3>
+            <table class="gizi-table">
+                <thead>
+                    <tr>
+                        <th>Gizi</th>
+                        <th>Kecil (PAUD-SD3)</th>
+                        <th>Besar (SD4-SMA)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Energi (kcal)</td>
+                        <td id="energi-k">448.19</td>
+                        <td id="energi-b">736.55</td>
+                    </tr>
+                    <tr>
+                        <td>Protein (gram)</td>
+                        <td id="protein-k">15.13</td>
+                        <td id="protein-b">25.03</td>
+                    </tr>
+                    <tr>
+                        <td>Serat (gram)</td>
+                        <td id="serat-k">3.21</td>
+                        <td id="serat-b">4.49</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Navigasi Hari / Tanggal -->
+        <section class="card nav-section">
+            <h3>MENU MINGGU INI</h3>
+            <div class="date-picker">
+                <button onclick="changeMenu('senin')">SEN<br>24</button>
+                <button onclick="changeMenu('selasa')">SEL<br>25</button>
+                <button onclick="changeMenu('rabu')">RAB<br>26</button>
+                <button class="active" onclick="changeMenu('kamis')">KAM<br>27</button>
+                <button onclick="changeMenu('jumat')">JUM<br>28</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

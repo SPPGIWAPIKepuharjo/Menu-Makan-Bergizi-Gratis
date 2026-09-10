@@ -1,13 +1,63 @@
-// ==========================================
-// DATA MENU & KANDUNGAN GIZI (SENIN - JUMAT)
-// ==========================================
-// Silakan sesuaikan nama foto, hidangan, atau angka gizi sesuai kebutuhan harian SPPG
-
+// Data Menu & Nutrisi per Hari
 const dataMenu = {
     senin: {
         hari: "Senin",
         tanggal: "24 Agustus 2026",
-        foto: "martabak.jpg", // Ganti dengan nama file foto menu hari Senin
+        foto: "martabak.jpg", // Ganti dengan nama file gambar sesuai hari
+        karbo: "Nasi Putih",
+        laukUtama: "Ayam Goreng",
+        laukPendamping: "Tahu Goreng",
+        sayur: "Tumis Buncis",
+        buah: "Pisang",
+        minuman: "Susu UHT",
+        gizi: {
+            energi: { kecil: "420 kcal", besar: "620 kcal", bumil: "720 kcal", balita: "320 kcal" },
+            protein: { kecil: "15g", besar: "22g", bumil: "27g", balita: "11g" },
+            lemak: { kecil: "10g", besar: "18g", bumil: "22g", balita: "8g" },
+            karbo: { kecil: "52g", besar: "75g", bumil: "85g", balita: "42g" },
+            serat: { kecil: "3g", besar: "5g", bumil: "6g", balita: "2g" }
+        }
+    },
+    selasa: {
+        hari: "Selasa",
+        tanggal: "25 Agustus 2026",
+        foto: "martabak.jpg",
+        karbo: "Nasi Kuning",
+        laukUtama: "Ikan Balado",
+        laukPendamping: "Tempe Orek",
+        sayur: "Capcay",
+        buah: "Jeruk",
+        minuman: "Susu UHT",
+        gizi: {
+            energi: { kecil: "430 kcal", besar: "630 kcal", bumil: "730 kcal", balita: "330 kcal" },
+            protein: { kecil: "16g", besar: "23g", bumil: "28g", balita: "12g" },
+            lemak: { kecil: "11g", besar: "19g", bumil: "23g", balita: "9g" },
+            karbo: { kecil: "53g", besar: "76g", bumil: "86g", balita: "43g" },
+            serat: { kecil: "3g", besar: "5g", bumil: "6g", balita: "2g" }
+        }
+    },
+    rabu: {
+        hari: "Rabu",
+        tanggal: "26 Agustus 2026",
+        foto: "martabak.jpg",
+        karbo: "Nasi Putih",
+        laukUtama: "Daging Rendang",
+        laukPendamping: "Perkedel Kentang",
+        sayur: "Sayur Sop",
+        buah: "Apel",
+        minuman: "Susu UHT",
+        gizi: {
+            energi: { kecil: "450 kcal", besar: "650 kcal", bumil: "750 kcal", balita: "350 kcal" },
+            protein: { kecil: "17g", besar: "25g", bumil: "30g", balita: "13g" },
+            lemak: { kecil: "12g", besar: "20g", bumil: "25g", balita: "10g" },
+            karbo: { kecil: "55g", besar: "80g", bumil: "90g", balita: "45g" },
+            serat: { kecil: "4g", besar: "6g", bumil: "7g", balita: "3g" }
+        }
+    },
+    kamis: {
+        hari: "Kamis",
+        tanggal: "27 Agustus 2026",
+        foto: "martabak.jpg",
         karbo: "Nasi Putih",
         laukUtama: "Ayam Semur",
         laukPendamping: "Tahu Bacem",
@@ -15,158 +65,131 @@ const dataMenu = {
         buah: "Pisang Ambon",
         minuman: "Susu UHT",
         gizi: {
-            kecil:  { energi: "440 kcal", protein: "16g", lemak: "11g", karbo: "54g", serat: "3g" },
-            besar:  { energi: "640 kcal", protein: "24g", lemak: "19g", karbo: "78g", serat: "5g" },
-            bumil:  { energi: "740 kcal", protein: "29g", lemak: "24g", karbo: "88g", serat: "6g" },
-            balita: { energi: "340 kcal", protein: "12g", lemak: "9g",  karbo: "44g", serat: "2g" }
-        }
-    },
-    selasa: {
-        hari: "Selasa",
-        tanggal: "25 Agustus 2026",
-        foto: "martabak.jpg", // Ganti dengan nama file foto menu hari Selasa
-        karbo: "Nasi Putih",
-        laukUtama: "Ikan Goreng Tepung",
-        laukPendamping: "Tempe Goreng",
-        sayur: "Tumis Buncis & Wortel",
-        buah: "Jeruk Sweet",
-        minuman: "Air Mineral",
-        gizi: {
-            kecil:  { energi: "450 kcal", protein: "17g", lemak: "12g", karbo: "56g", serat: "3g" },
-            besar:  { energi: "660 kcal", protein: "26g", lemak: "20g", karbo: "80g", serat: "5g" },
-            bumil:  { energi: "750 kcal", protein: "31g", lemak: "25g", karbo: "90g", serat: "6g" },
-            balita: { energi: "350 kcal", protein: "13g", lemak: "10g", karbo: "45g", serat: "2g" }
-        }
-    },
-    rabu: {
-        hari: "Rabu",
-        tanggal: "26 Agustus 2026",
-        foto: "martabak.jpg", // Ganti dengan nama file foto menu hari Rabu
-        karbo: "Nasi Kuning",
-        laukUtama: "Empal Daging",
-        laukPendamping: "Perkedel Kentang",
-        sayur: "Orek Tempe & Kacang",
-        buah: "Semangka",
-        minuman: "Susu UHT",
-        gizi: {
-            kecil:  { energi: "470 kcal", protein: "18g", lemak: "13g", karbo: "55g", serat: "4g" },
-            besar:  { energi: "680 kcal", protein: "27g", lemak: "22g", karbo: "82g", serat: "5g" },
-            bumil:  { energi: "780 kcal", protein: "32g", lemak: "27g", karbo: "92g", serat: "7g" },
-            balita: { energi: "360 kcal", protein: "13g", lemak: "11g", karbo: "46g", serat: "3g" }
-        }
-    },
-    kamis: {
-        hari: "Kamis",
-        tanggal: "27 Agustus 2026",
-        foto: "martabak.jpg", // Ganti dengan nama file foto menu hari Kamis
-        karbo: "Nasi Putih",
-        laukUtama: "Ayam Goreng Krispi",
-        laukPendamping: "Tahu Isi",
-        sayur: "Capcay Sayur",
-        buah: "Melon",
-        minuman: "Susu UHT",
-        gizi: {
-            kecil:  { energi: "460 kcal", protein: "16g", lemak: "12g", karbo: "57g", serat: "3g" },
-            besar:  { energi: "670 kcal", protein: "25g", lemak: "21g", karbo: "81g", serat: "5g" },
-            bumil:  { energi: "760 kcal", protein: "30g", lemak: "26g", karbo: "91g", serat: "6g" },
-            balita: { energi: "355 kcal", protein: "12g", lemak: "10g", karbo: "45g", serat: "2g" }
+            energi: { kecil: "440 kcal", besar: "640 kcal", bumil: "740 kcal", balita: "340 kcal" },
+            protein: { kecil: "16g", besar: "24g", bumil: "29g", balita: "12g" },
+            lemak: { kecil: "11g", besar: "19g", bumil: "24g", balita: "9g" },
+            karbo: { kecil: "54g", besar: "78g", bumil: "88g", balita: "44g" },
+            serat: { kecil: "3g", besar: "5g", bumil: "6g", balita: "2g" }
         }
     },
     jumat: {
         hari: "Jumat",
         tanggal: "28 Agustus 2026",
-        foto: "martabak.jpg", // Ganti dengan nama file foto menu hari Jumat
+        foto: "martabak.jpg",
         karbo: "Nasi Uduk",
         laukUtama: "Telur Balado",
         laukPendamping: "Tahu Goreng",
-        sayur: "Sayur Sop Komplit",
-        buah: "Pisang Cavendish",
-        minuman: "Air Mineral",
+        sayur: "Tumis Kangkung",
+        buah: "Semangka",
+        minuman: "Susu UHT",
         gizi: {
-            kecil:  { energi: "445 kcal", protein: "15g", lemak: "11g", karbo: "53g", serat: "3g" },
-            besar:  { energi: "650 kcal", protein: "23g", lemak: "19g", karbo: "79g", serat: "4g" },
-            bumil:  { energi: "730 kcal", protein: "28g", lemak: "23g", karbo: "87g", serat: "5g" },
-            balita: { energi: "340 kcal", protein: "11g", lemak: "9g",  karbo: "43g", serat: "2g" }
+            energi: { kecil: "410 kcal", besar: "610 kcal", bumil: "710 kcal", balita: "310 kcal" },
+            protein: { kecil: "14g", besar: "21g", bumil: "26g", balita: "10g" },
+            lemak: { kecil: "10g", besar: "17g", bumil: "21g", balita: "8g" },
+            karbo: { kecil: "50g", besar: "73g", bumil: "83g", balita: "40g" },
+            serat: { kecil: "3g", besar: "4g", bumil: "5g", balita: "2g" }
         }
     }
 };
 
-// ==========================================
-// FUNGSI UTAMA UNTUK UPDATE TAMPILAN WEBSITE
-// ==========================================
+// Ambil elemen DOM
+const buttons = document.querySelectorAll('.btn-hari');
+const hariText = document.getElementById('hari-text');
+const tanggalText = document.getElementById('tanggal-text');
+const fotoMenu = document.getElementById('foto-menu');
 
-function updateTampilan(hari) {
-    const data = dataMenu[hari];
+const karboText = document.getElementById('karbo-text');
+const laukUtamaText = document.getElementById('lauk-utama-text');
+const laukPendampingText = document.getElementById('lauk-pendamping-text');
+const sayurText = document.getElementById('sayur-text');
+const buahText = document.getElementById('buah-text');
+const minumanText = document.getElementById('minuman-text');
+
+// Elemen Tabel Gizi
+const energiKecil = document.getElementById('energi-kecil');
+const energiBesar = document.getElementById('energi-besar');
+const energiBumil = document.getElementById('energi-bumil');
+const energiBalita = document.getElementById('energi-balita');
+
+const proteinKecil = document.getElementById('protein-kecil');
+const proteinBesar = document.getElementById('protein-besar');
+const proteinBumil = document.getElementById('protein-bumil');
+const proteinBalita = document.getElementById('protein-balita');
+
+const lemakKecil = document.getElementById('lemak-kecil');
+const lemakBesar = document.getElementById('lemak-besar');
+const lemakBumil = document.getElementById('lemak-bumil');
+const lemakBalita = document.getElementById('lemak-balita');
+
+const karboKecil = document.getElementById('karbo-kecil');
+const karboBesar = document.getElementById('karbo-besar');
+const karboBumil = document.getElementById('karbo-bumil');
+const karboBalita = document.getElementById('karbo-balita');
+
+const seratKecil = document.getElementById('serat-kecil');
+const seratBesar = document.getElementById('serat-besar');
+const seratBumil = document.getElementById('serat-bumil');
+const seratBalita = document.getElementById('serat-balita');
+
+// Fungsi untuk memperbarui tampilan berdasarkan hari yang dipilih
+function updateTampilan(keyHari) {
+    const data = dataMenu[keyHari];
     if (!data) return;
 
-    // 1. Update Hari, Tanggal & Foto Menu
-    document.getElementById("hari-text").innerText = data.hari;
-    document.getElementById("tanggal-text").innerText = data.tanggal;
-    
-    // Ganti foto menu (memastikan gambar diperbarui)
-    const fotoElem = document.getElementById("foto-menu");
-    if (fotoElem) {
-        fotoElem.src = data.foto;
-        fotoElem.alt = "Foto Menu " + data.hari;
-    }
+    // Update Header Hari & Tanggal
+    hariText.textContent = data.hari;
+    tanggalText.textContent = data.tanggal;
 
-    // 2. Update Komposisi Menu
-    document.getElementById("karbo-text").innerText = data.karbo;
-    document.getElementById("lauk-utama-text").innerText = data.laukUtama;
-    document.getElementById("lauk-pendamping-text").innerText = data.laukPendamping;
-    document.getElementById("sayur-text").innerText = data.sayur;
-    document.getElementById("buah-text").innerText = data.buah;
-    document.getElementById("minuman-text").innerText = data.minuman;
+    // Update Foto & Menu
+    fotoMenu.src = data.foto;
+    karboText.textContent = data.karbo;
+    laukUtamaText.textContent = data.laukUtama;
+    laukPendampingText.textContent = data.laukPendamping;
+    sayurText.textContent = data.sayur;
+    buahText.textContent = data.buah;
+    minumanText.textContent = data.minuman;
 
-    // 3. Update Nilai Gizi - Porsi Kecil
-    document.getElementById("energi-kecil").innerText = data.gizi.kecil.energi;
-    document.getElementById("protein-kecil").innerText = data.gizi.kecil.protein;
-    document.getElementById("lemak-kecil").innerText = data.gizi.kecil.lemak;
-    document.getElementById("karbo-kecil").innerText = data.gizi.kecil.karbo;
-    document.getElementById("serat-kecil").innerText = data.gizi.kecil.serat;
+    // Update Tabel Gizi
+    energiKecil.textContent = data.gizi.energi.kecil;
+    energiBesar.textContent = data.gizi.energi.besar;
+    energiBumil.textContent = data.gizi.energi.bumil;
+    energiBalita.textContent = data.gizi.energi.balita;
 
-    // 4. Update Nilai Gizi - Porsi Besar
-    document.getElementById("energi-besar").innerText = data.gizi.besar.energi;
-    document.getElementById("protein-besar").innerText = data.gizi.besar.protein;
-    document.getElementById("lemak-besar").innerText = data.gizi.besar.lemak;
-    document.getElementById("karbo-besar").innerText = data.gizi.besar.karbo;
-    document.getElementById("serat-besar").innerText = data.gizi.besar.serat;
+    proteinKecil.textContent = data.gizi.protein.kecil;
+    proteinBesar.textContent = data.gizi.protein.besar;
+    proteinBumil.textContent = data.gizi.protein.bumil;
+    proteinBalita.textContent = data.gizi.protein.balita;
 
-    // 5. Update Nilai Gizi - Ibu Hamil & Menyusui
-    document.getElementById("energi-bumil").innerText = data.gizi.bumil.energi;
-    document.getElementById("protein-bumil").innerText = data.gizi.bumil.protein;
-    document.getElementById("lemak-bumil").innerText = data.gizi.bumil.lemak;
-    document.getElementById("karbo-bumil").innerText = data.gizi.bumil.karbo;
-    document.getElementById("serat-bumil").innerText = data.gizi.bumil.serat;
+    lemakKecil.textContent = data.gizi.lemak.kecil;
+    lemakBesar.textContent = data.gizi.lemak.besar;
+    lemakBumil.textContent = data.gizi.lemak.bumil;
+    lemakBalita.textContent = data.gizi.lemak.balita;
 
-    // 6. Update Nilai Gizi - Balita
-    document.getElementById("energi-balita").innerText = data.gizi.balita.energi;
-    document.getElementById("protein-balita").innerText = data.gizi.balita.protein;
-    document.getElementById("lemak-balita").innerText = data.gizi.balita.lemak;
-    document.getElementById("karbo-balita").innerText = data.gizi.balita.karbo;
-    document.getElementById("serat-balita").innerText = data.gizi.balita.serat;
+    karboKecil.textContent = data.gizi.karbo.kecil;
+    karboBesar.textContent = data.gizi.karbo.besar;
+    karboBumil.textContent = data.gizi.karbo.bumil;
+    karboBalita.textContent = data.gizi.karbo.balita;
+
+    seratKecil.textContent = data.gizi.serat.kecil;
+    seratBesar.textContent = data.gizi.serat.besar;
+    seratBumil.textContent = data.gizi.serat.bumil;
+    seratBalita.textContent = data.gizi.serat.balita;
 }
 
-// ==========================================
-// MENANGKAP KLIK NAVIGASI TOMBOL HARI
-// ==========================================
+// Event Listener untuk Tombol Hari
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Hapus status active dari semua tombol
+        buttons.forEach(btn => btn.classList.remove('active'));
 
-document.addEventListener("DOMContentLoaded", function () {
-    const tombolHari = document.querySelectorAll(".btn-hari");
+        // Tambah status active ke tombol yang diklik
+        this.classList.add('active');
 
-    tombolHari.forEach(button => {
-        button.addEventListener("click", function () {
-            // Hilangkan status aktif dari semua tombol
-            tombolHari.forEach(btn => btn.classList.remove("active"));
-            
-            // Beri status aktif pada tombol yang diklik
-            this.classList.add("active");
-
-            // Ambil atribut data-hari (senin, selasa, rabu, kamis, jumat)
-            const hariDipilih = this.getAttribute("data-hari");
-            
-            // Jalankan fungsi update
-            updateTampilan(hariDipilih);
-        });
+        // Ambil data-hari dan update seluruh isi halaman
+        const hariDipilih = this.getAttribute('data-hari');
+        updateTampilan(hariDipilih);
     });
 });
+
+// Set tampilan awal ke hari Senin saat pertama kali dibuka
+updateTampilan('senin');

@@ -1,21 +1,19 @@
-// Data menu dan tanggal sesuai tabel Siklus Menu
+// Data menu persis sesuai tabel Siklus Menu-1 terbaru
 const dataMenu = {
     senin: {
         hari: "Senin",
         tanggal: "14 September 2026",
-        tglSingkat: "14 Sep",
         karbo: "Nasi Putih",
         laukUtama: "Daging Blackpepper",
         laukPendamping: "Tahu Kremes",
         sayur: "Capcay Sawi Putih + Wortel - Pentol",
         buah: "Pisang",
         minuman: "Susu UHT",
-        foto: "martabak.jpg" // Ganti sesuai file foto Senin kamu
+        foto: "senin.jpg"
     },
     selasa: {
         hari: "Selasa",
         tanggal: "15 September 2026",
-        tglSingkat: "15 Sep",
         karbo: "Nasi Putih",
         laukUtama: "Terik Telur Alergen Ayam Pop",
         laukPendamping: "Tempe Orek Kecap + Teri",
@@ -27,11 +25,10 @@ const dataMenu = {
     rabu: {
         hari: "Rabu",
         tanggal: "16 September 2026",
-        tglSingkat: "16 Sep",
         karbo: "Nasi Putih",
-        laukUtama: "Ayam Crispy Saus B...", // Lengkapi sesuai tabel kamu
+        laukUtama: "Ayam Crispy Saus Bistik Alergen Pentol",
         laukPendamping: "Edamame",
-        sayur: "Saute Kacang Panja...",
+        sayur: "Saute Kacang Panjang + Jagung",
         buah: "Pisang",
         minuman: "Susu UHT",
         foto: "rabu.jpg"
@@ -39,11 +36,10 @@ const dataMenu = {
     kamis: {
         hari: "Kamis",
         tanggal: "17 September 2026",
-        tglSingkat: "17 Sep",
         karbo: "Nasi Putih",
-        laukUtama: "-",
-        laukPendamping: "-",
-        sayur: "-",
+        laukUtama: "Tongseng Ayam Alergen Pentol Kecap",
+        laukPendamping: "Perkedel Tahu",
+        sayur: "Tumis Pelangi Wortel + Babycorn + Sawi",
         buah: "Pisang",
         minuman: "Susu UHT",
         foto: "kamis.jpg"
@@ -51,18 +47,16 @@ const dataMenu = {
     jumat: {
         hari: "Jumat",
         tanggal: "18 September 2026",
-        tglSingkat: "18 Sep",
-        karbo: "Nasi Putih",
-        laukUtama: "-",
-        laukPendamping: "-",
-        sayur: "-",
+        karbo: "Roti Bun (Sekolah) Posyandu Nasi",
+        laukUtama: "Patty Crispy Homemade",
+        laukPendamping: "Tahu Gejrot (PB Bumil)",
+        sayur: "Timun + Mayow (Sekolah)",
         buah: "Pisang",
         minuman: "Susu UHT",
         foto: "jumat.jpg"
     }
 };
 
-// Fungsi untuk mengganti tampilan menu saat tombol hari diklik
 function updateMenuHari(keyHari) {
     const data = dataMenu[keyHari];
     if (!data) return;
@@ -84,21 +78,10 @@ function updateMenuHari(keyHari) {
     document.getElementById('minuman-text').textContent = data.minuman;
 }
 
-// Inisialisasi Event Listener Tombol
 document.addEventListener('DOMContentLoaded', () => {
     const tombolHari = document.querySelectorAll('.btn-day, .btn-hari');
 
-    // Update label tanggal singkat pada tombol navigasi bawah
     tombolHari.forEach(button => {
-        const keyHari = button.getAttribute('data-hari');
-        if (dataMenu[keyHari]) {
-            const spanTgl = button.querySelector('span');
-            if (spanTgl) {
-                spanTgl.textContent = dataMenu[keyHari].tglSingkat;
-            }
-        }
-
-        // Event Klik Tombol Hari
         button.addEventListener('click', (e) => {
             const hariDiPilih = e.currentTarget.getAttribute('data-hari');
 
@@ -109,6 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Set default ke hari Senin saat pertama kali buka
+    // Set default awal ke Senin
     updateMenuHari('senin');
 });

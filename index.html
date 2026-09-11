@@ -3,303 +3,551 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siklus Menu & Informasi Nutrisi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>SPPG Kepuharjo 1 Lumajang - Makan Bergizi Gratis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2e7d32;
-            --primary-light: #e8f5e9;
-            --border-color: #e2e8f0;
-            --bg-color: #f4f6f8;
+            --bg-app: #eef7ff;
             --card-bg: #ffffff;
-            --text-main: #2c3e50;
-            --text-muted: #6c757d;
+            --primary-blue: #1565c0;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --border-light: #e2e8f0;
+            --warning-bg: #fff1f2;
+            --warning-border: #ffe4e6;
+            --warning-text: #991b1b;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 20px 15px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        header h1 {
-            color: var(--primary-color);
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        header p {
-            color: var(--text-muted);
-            font-size: 14px;
-        }
-
-        /* Navigasi Hari */
-        .nav-hari {
+            background-color: var(--bg-app);
+            color: var(--text-dark);
+            padding: 15px 10px;
             display: flex;
             justify-content: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
         }
 
-        .btn-hari {
-            background-color: var(--card-bg);
-            border: 2px solid var(--border-color);
-            color: var(--text-main);
-            padding: 10px 18px;
-            border-radius: 25px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 14px;
-        }
-
-        .btn-hari:hover {
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-        }
-
-        .btn-hari.active {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            color: #ffffff;
-            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
-        }
-
-        /* Card Menu Utama */
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            padding: 24px;
-            margin-bottom: 25px;
-        }
-
-        .header-menu {
-            border-bottom: 2px dashed var(--border-color);
-            padding-bottom: 12px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header-menu h2 {
-            color: var(--primary-color);
-            font-size: 20px;
-        }
-
-        .header-menu span {
-            background-color: var(--primary-light);
-            color: var(--primary-color);
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .grid-menu {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            align-items: center;
-        }
-
-        @media (max-width: 600px) {
-            .grid-menu {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .foto-container {
-            width: 100%;
-            height: 220px;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
-
-        .foto-container img {
+        /* Modal Pop-up Poster Awal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 15px;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            border-radius: 20px;
+            max-width: 450px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .btn-close-modal {
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.2s;
+        }
+
+        .btn-close-modal:hover {
+            opacity: 0.9;
+        }
+
+        /* Main Container */
+        .app-card {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            max-width: 480px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 85, 255, 0.05);
+        }
+
+        /* Header Logo & Title */
+        .header-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .header-logo {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+
+        .header-title-group h4 {
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            color: var(--primary-blue);
+            font-weight: 800;
+        }
+
+        .header-title-group h2 {
+            font-size: 16px;
+            color: var(--text-dark);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .header-title-group p {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        /* Info Hari & Tanggal */
+        .day-info {
+            margin-bottom: 15px;
+        }
+
+        .day-info h1 {
+            font-size: 26px;
+            color: var(--primary-blue);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .day-info p {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Image Display */
+        .hero-image-container {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .hero-image-container img {
+            width: 100%;
+            display: block;
             object-fit: cover;
         }
 
-        .detail-menu-list {
-            list-style: none;
+        /* Box Wajib Diperhatikan */
+        .warning-box {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 25px;
         }
 
-        .detail-menu-list li {
-            margin-bottom: 10px;
-            font-size: 14px;
+        .warning-title {
+            color: var(--warning-text);
+            font-weight: 800;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
         }
 
-        .detail-menu-list strong {
-            color: var(--primary-color);
-            display: inline-block;
-            width: 140px;
+        .warning-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
         }
 
-        /* Tabel Gizi */
-        .section-title {
-            font-size: 18px;
-            color: var(--primary-color);
-            margin-bottom: 15px;
+        .warning-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-num {
+            background-color: #ffe4e6;
+            color: var(--warning-text);
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .warning-text h5 {
+            font-size: 13px;
+            color: var(--warning-text);
+            font-weight: 700;
+        }
+
+        .warning-text p {
+            font-size: 11.5px;
+            color: #7f1d1d;
+            line-height: 1.4;
+        }
+
+        /* Section Titles */
+        .section-heading {
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        /* Grid Isi Ompreng */
+        .ompreng-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .ompreng-card {
+            background-color: #f8fafc;
+            border: 1px solid #f1f5f9;
+            border-radius: 12px;
+            padding: 10px 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ompreng-icon {
+            font-size: 20px;
+        }
+
+        .ompreng-info label {
+            display: block;
+            font-size: 10px;
+            color: var(--text-muted);
             font-weight: 600;
         }
 
-        .table-responsive {
+        .ompreng-info span {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        /* Tabel AKG */
+        .table-container {
             overflow-x: auto;
+            margin-bottom: 10px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 13px;
-            text-align: center;
+            font-size: 12px;
         }
 
         th, td {
-            padding: 10px 12px;
-            border: 1px solid var(--border-color);
+            padding: 10px 6px;
+            text-align: center;
         }
 
         th {
-            background-color: var(--primary-light);
-            color: var(--primary-color);
-            font-weight: 600;
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 11px;
+            border-bottom: 1px solid var(--border-light);
+            background-color: #f8fafc;
         }
 
-        tr:nth-child(even) {
-            background-color: #fafafa;
-        }
-
-        td:first-child {
+        th:first-child, td:first-child {
             text-align: left;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        td {
+            border-bottom: 1px solid #f1f5f9;
+            color: var(--text-dark);
             font-weight: 600;
-            color: var(--text-main);
+            font-size: 11.5px;
+        }
+
+        .akg-note {
+            font-size: 9.5px;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            line-height: 1.3;
+        }
+
+        /* Tombol Navigasi Hari Bawah */
+        .nav-days {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+
+        .btn-day {
+            flex: 1;
+            min-width: 65px;
+            background-color: #f1f5f9;
+            border: none;
+            border-radius: 12px;
+            padding: 10px 4px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-day strong {
+            display: block;
+            font-size: 12px;
+            color: var(--text-dark);
+        }
+
+        .btn-day span {
+            display: block;
+            font-size: 9px;
+            color: var(--text-muted);
+        }
+
+        .btn-day.active {
+            background-color: var(--primary-blue);
+        }
+
+        .btn-day.active strong,
+        .btn-day.active span {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Siklus Menu & Nutrisi</h1>
-            <p>Siklus Menu-1 (14 - 18 September 2026)</p>
-        </header>
-
-        <!-- Navigasi Hari -->
-        <div class="nav-hari">
-            <button class="btn-hari active" data-hari="senin">Senin</button>
-            <button class="btn-hari" data-hari="selasa">Selasa</button>
-            <button class="btn-hari" data-hari="rabu">Rabu</button>
-            <button class="btn-hari" data-hari="kamis">Kamis</button>
-            <button class="btn-hari" data-hari="jumat">Jumat</button>
-        </div>
-
-        <!-- Detail Menu -->
-        <div class="card">
-            <div class="header-menu">
-                <h2 id="hari-text">Senin</h2>
-                <span id="tanggal-text">14 September 2026</span>
-            </div>
-
-            <div class="grid-menu">
-                <div class="foto-container">
-                    <img id="foto-menu" src="martabak.jpg" alt="Foto Menu">
-                </div>
-                <ul class="detail-menu-list">
-                    <li><strong>Karbohidrat:</strong> <span id="karbo-text">-</span></li>
-                    <li><strong>Lauk Utama:</strong> <span id="lauk-utama-text">-</span></li>
-                    <li><strong>Lauk Pendamping:</strong> <span id="lauk-pendamping-text">-</span></li>
-                    <li><strong>Sayur:</strong> <span id="sayur-text">-</span></li>
-                    <li><strong>Buah:</strong> <span id="buah-text">-</span></li>
-                    <li><strong>Minuman:</strong> <span id="minuman-text">-</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Tabel Kandungan Gizi -->
-        <div class="card">
-            <h3 class="section-title">Informasi Nilai Gizi Penerima Manfaat</h3>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Kandungan Gizi</th>
-                            <th>Porsi Kecil</th>
-                            <th>Porsi Besar</th>
-                            <th>Bumil</th>
-                            <th>Balita</th>
-                            <th>Alergen</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Energi</td>
-                            <td id="energi-kecil">0 kcal</td>
-                            <td id="energi-besar">0 kcal</td>
-                            <td id="energi-bumil">0 kcal</td>
-                            <td id="energi-balita">0 kcal</td>
-                            <td id="energi-alergen">-</td>
-                        </tr>
-                        <tr>
-                            <td>Protein</td>
-                            <td id="protein-kecil">0g</td>
-                            <td id="protein-besar">0g</td>
-                            <td id="protein-bumil">0g</td>
-                            <td id="protein-balita">0g</td>
-                            <td id="protein-alergen">-</td>
-                        </tr>
-                        <tr>
-                            <td>Lemak</td>
-                            <td id="lemak-kecil">0g</td>
-                            <td id="lemak-besar">0g</td>
-                            <td id="lemak-bumil">0g</td>
-                            <td id="lemak-balita">0g</td>
-                            <td id="lemak-alergen">-</td>
-                        </tr>
-                        <tr>
-                            <td>Karbohidrat</td>
-                            <td id="karbo-kecil">0g</td>
-                            <td id="karbo-besar">0g</td>
-                            <td id="karbo-bumil">0g</td>
-                            <td id="karbo-balita">0g</td>
-                            <td id="karbo-alergen">-</td>
-                        </tr>
-                        <tr>
-                            <td>Serat</td>
-                            <td id="serat-kecil">0g</td>
-                            <td id="serat-besar">0g</td>
-                            <td id="serat-bumil">0g</td>
-                            <td id="serat-balita">0g</td>
-                            <td id="serat-alergen">-</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <!-- Pop-up Poster Awal -->
+    <div class="modal-overlay" id="modal-poster">
+        <div class="modal-content">
+            <img src="poster.jpg" alt="Langkah Menyantap MBG di Sekolah">
+            <button class="btn-close-modal" onclick="tutupModal()">Lanjut ke Menu</button>
         </div>
     </div>
 
+    <!-- Tampilan Utama Aplikasi -->
+    <div class="app-card">
+        
+        <!-- Header -->
+        <div class="header-section">
+            <img src="logo.png" alt="Logo" class="header-logo" onerror="this.style.display='none'">
+            <div class="header-title-group">
+                <h4>MAKAN BERGIZI GRATIS</h4>
+                <h2>SPPG Kepuharjo 1 Lumajang</h2>
+                <p>Yayasan Asa Nusantara Berdikari</p>
+            </div>
+        </div>
+
+        <!-- Info Hari -->
+        <div class="day-info">
+            <h1 id="hari-text">Senin</h1>
+            <p id="tanggal-text">24 Agustus 2026</p>
+        </div>
+
+        <!-- Gambar Menu -->
+        <div class="hero-image-container">
+            <img id="foto-menu" src="martabak.jpg" alt="Foto Menu Hari Ini">
+        </div>
+
+        <!-- Box Wajib Diperhatikan -->
+        <div class="warning-box">
+            <div class="warning-title">
+                ⚠️ Wajib diperhatikan
+            </div>
+            <div class="warning-item">
+                <div class="warning-num">1</div>
+                <div class="warning-text">
+                    <h5>Makan sekarang, di sekolah</h5>
+                    <p>Habiskan paling lambat 2 jam setelah ompreng diterima. Makanan ini dimasak tanpa bahan pengawet.</p>
+                </div>
+            </div>
+            <div class="warning-item">
+                <div class="warning-num">2</div>
+                <div class="warning-text">
+                    <h5>Jangan dibawa pulang</h5>
+                    <p>Makanan yang dibawa pulang cepat basi dan berisiko menyebabkan sakit perut atau keracunan.</p>
+                </div>
+            </div>
+            <div class="warning-item">
+                <div class="warning-num">3</div>
+                <div class="warning-text">
+                    <h5>Ompreng dikembalikan ke petugas</h5>
+                    <p>Setelah selesai makan, kembalikan ompreng ke petugas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid Isi Ompreng -->
+        <div class="section-heading">ISI OMPRENG HARI INI</div>
+        <div class="ompreng-grid">
+            <div class="ompreng-card">
+                <span class="ompreng-icon">🍚</span>
+                <div class="ompreng-info">
+                    <label>Karbohidrat</label>
+                    <span id="karbo-text">Nasi Putih</span>
+                </div>
+            </div>
+            <div class="ompreng-card">
+                <span class="ompreng-icon">🍗</span>
+                <div class="ompreng-info">
+                    <label>Lauk Utama</label>
+                    <span id="lauk-utama-text">Ayam Goreng</span>
+                </div>
+            </div>
+            <div class="ompreng-card">
+                <span class="ompreng-icon">🍢</span>
+                <div class="ompreng-info">
+                    <label>Lauk Pendamping</label>
+                    <span id="lauk-pendamping-text">Tahu Goreng</span>
+                </div>
+            </div>
+            <div class="ompreng-card">
+                <span class="ompreng-icon">🥦</span>
+                <div class="ompreng-info">
+                    <label>Sayur</label>
+                    <span id="sayur-text">Tumis Buncis</span>
+                </div>
+            </div>
+            <div class="ompreng-card">
+                <span class="ompreng-icon">🍌</span>
+                <div class="ompreng-info">
+                    <label>Buah Segar</label>
+                    <span id="buah-text">Pisang</span>
+                </div>
+            </div>
+            <div class="ompreng-card">
+                <span class="ompreng-icon">🥛</span>
+                <div class="ompreng-info">
+                    <label>Pelengkap</label>
+                    <span id="minuman-text">Susu UHT</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabel AKG -->
+        <div class="section-heading">RINCIAN AKG BERDASARKAN PORSI</div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter Gizi</th>
+                        <th>Porsi Kecil</th>
+                        <th>Porsi Besar</th>
+                        <th>Bumil & Busui</th>
+                        <th>Balita</th>
+                        <th>Alergen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Energi Total</td>
+                        <td id="energi-kecil">420 kcal</td>
+                        <td id="energi-besar">620 kcal</td>
+                        <td id="energi-bumil">720 kcal</td>
+                        <td id="energi-balita">320 kcal</td>
+                        <td id="energi-alergen">-</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td id="protein-kecil">15g</td>
+                        <td id="protein-besar">22g</td>
+                        <td id="protein-bumil">27g</td>
+                        <td id="protein-balita">11g</td>
+                        <td id="protein-alergen">-</td>
+                    </tr>
+                    <tr>
+                        <td>Lemak Total</td>
+                        <td id="lemak-kecil">10g</td>
+                        <td id="lemak-besar">18g</td>
+                        <td id="lemak-bumil">22g</td>
+                        <td id="lemak-balita">8g</td>
+                        <td id="lemak-alergen">-</td>
+                    </tr>
+                    <tr>
+                        <td>Karbohidrat</td>
+                        <td id="karbo-kecil">52g</td>
+                        <td id="karbo-besar">75g</td>
+                        <td id="karbo-bumil">85g</td>
+                        <td id="karbo-balita">42g</td>
+                        <td id="karbo-alergen">-</td>
+                    </tr>
+                    <tr>
+                        <td>Serat Pangan</td>
+                        <td id="serat-kecil">3g</td>
+                        <td id="serat-besar">5g</td>
+                        <td id="serat-bumil">6g</td>
+                        <td id="serat-balita">2g</td>
+                        <td id="serat-alergen">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="akg-note">* AKG (Angka Kecukupan Gizi) dihitung berdasarkan standar Kementerian Kesehatan RI.</p>
+
+        <!-- Tombol Hari (Bawah) -->
+        <div class="nav-days">
+            <button class="btn-day active" data-hari="senin">
+                <strong>Senin</strong>
+                <span>24 Ags</span>
+            </button>
+            <button class="btn-day" data-hari="selasa">
+                <strong>Selasa</strong>
+                <span>25 Ags</span>
+            </button>
+            <button class="btn-day" data-hari="rabu">
+                <strong>Rabu</strong>
+                <span>26 Ags</span>
+            </button>
+            <button class="btn-day" data-hari="kamis">
+                <strong>Kamis</strong>
+                <span>27 Ags</span>
+            </button>
+            <button class="btn-day" data-hari="jumat">
+                <strong>Jumat</strong>
+                <span>28 Ags</span>
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        function tutupModal() {
+            document.getElementById('modal-poster').style.display = 'none';
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

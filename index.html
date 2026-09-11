@@ -33,7 +33,7 @@
             justify-content: center;
         }
 
-        /* Modal Pop-up Poster Awal */
+        /* Pop-up Poster Awal */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -51,7 +51,7 @@
         .modal-content {
             background-color: #ffffff;
             border-radius: 20px;
-            max-width: 450px;
+            max-width: 420px;
             width: 100%;
             max-height: 90vh;
             overflow-y: auto;
@@ -71,20 +71,15 @@
             background-color: var(--primary-blue);
             color: white;
             border: none;
-            padding: 14px 20px;
-            font-size: 15px;
+            padding: 12px 20px;
+            font-size: 14px;
             font-weight: 700;
             border-radius: 12px;
             cursor: pointer;
             width: 100%;
-            transition: opacity 0.2s;
         }
 
-        .btn-close-modal:hover {
-            opacity: 0.9;
-        }
-
-        /* Main Container */
+        /* Container Utama Web */
         .app-card {
             background-color: var(--card-bg);
             border-radius: 24px;
@@ -103,9 +98,10 @@
         }
 
         .header-logo {
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
+            flex-shrink: 0;
         }
 
         .header-title-group h4 {
@@ -118,7 +114,7 @@
         .header-title-group h2 {
             font-size: 16px;
             color: var(--text-dark);
-            font-weight: 700;
+            font-weight: 800;
             line-height: 1.2;
         }
 
@@ -127,13 +123,13 @@
             color: var(--text-muted);
         }
 
-        /* Info Hari & Tanggal */
+        /* Info Hari & Tanggal Sesuai Gambar */
         .day-info {
             margin-bottom: 15px;
         }
 
         .day-info h1 {
-            font-size: 26px;
+            font-size: 28px;
             color: var(--primary-blue);
             font-weight: 800;
             line-height: 1.1;
@@ -142,25 +138,33 @@
         .day-info p {
             font-size: 13px;
             color: var(--text-muted);
-            font-weight: 500;
+            font-weight: 600;
+            margin-top: 2px;
         }
 
-        /* Image Display */
+        /* Ukuran Foto Menu */
         .hero-image-container {
             width: 100%;
+            max-height: 240px;
             border-radius: 16px;
             overflow: hidden;
             margin-bottom: 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8fafc;
         }
 
         .hero-image-container img {
             width: 100%;
-            display: block;
+            height: 100%;
+            max-height: 240px;
             object-fit: cover;
+            display: block;
         }
 
-        /* Box Wajib Diperhatikan */
+        /* Wajib Diperhatikan Box */
         .warning-box {
             background-color: var(--warning-bg);
             border: 1px solid var(--warning-border);
@@ -172,7 +176,7 @@
         .warning-title {
             color: var(--warning-text);
             font-weight: 800;
-            font-size: 15px;
+            font-size: 14px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -182,7 +186,7 @@
         .warning-item {
             display: flex;
             gap: 12px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .warning-item:last-child {
@@ -192,32 +196,32 @@
         .warning-num {
             background-color: #ffe4e6;
             color: var(--warning-text);
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 11px;
             flex-shrink: 0;
         }
 
         .warning-text h5 {
-            font-size: 13px;
+            font-size: 12.5px;
             color: var(--warning-text);
             font-weight: 700;
         }
 
         .warning-text p {
-            font-size: 11.5px;
+            font-size: 11px;
             color: #7f1d1d;
-            line-height: 1.4;
+            line-height: 1.35;
         }
 
-        /* Section Titles */
+        /* Judul Sub-bagian */
         .section-heading {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 800;
             color: var(--primary-blue);
             letter-spacing: 0.5px;
@@ -225,7 +229,7 @@
             text-transform: uppercase;
         }
 
-        /* Grid Isi Ompreng */
+        /* Grid Isi Ompreng Hari Ini */
         .ompreng-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -244,19 +248,19 @@
         }
 
         .ompreng-icon {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         .ompreng-info label {
             display: block;
-            font-size: 10px;
+            font-size: 9.5px;
             color: var(--text-muted);
             font-weight: 600;
         }
 
         .ompreng-info span {
             display: block;
-            font-size: 12px;
+            font-size: 11.5px;
             font-weight: 700;
             color: var(--text-dark);
         }
@@ -264,24 +268,24 @@
         /* Tabel AKG */
         .table-container {
             overflow-x: auto;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 12px;
+            font-size: 11px;
         }
 
         th, td {
-            padding: 10px 6px;
+            padding: 8px 4px;
             text-align: center;
         }
 
         th {
             color: var(--primary-blue);
             font-weight: 700;
-            font-size: 11px;
+            font-size: 10.5px;
             border-bottom: 1px solid var(--border-light);
             background-color: #f8fafc;
         }
@@ -296,25 +300,24 @@
             border-bottom: 1px solid #f1f5f9;
             color: var(--text-dark);
             font-weight: 600;
-            font-size: 11.5px;
         }
 
         .akg-note {
-            font-size: 9.5px;
+            font-size: 9px;
             color: var(--text-muted);
             margin-bottom: 25px;
             line-height: 1.3;
         }
 
         /* Tombol Navigasi Hari Bawah */
-        .nav-days {
+        .nav-days, .nav-hari {
             display: flex;
             gap: 6px;
             overflow-x: auto;
             padding-bottom: 5px;
         }
 
-        .btn-day {
+        .btn-day, .btn-hari {
             flex: 1;
             min-width: 65px;
             background-color: #f1f5f9;
@@ -326,24 +329,24 @@
             transition: all 0.2s;
         }
 
-        .btn-day strong {
+        .btn-day strong, .btn-hari strong {
             display: block;
             font-size: 12px;
             color: var(--text-dark);
         }
 
-        .btn-day span {
+        .btn-day span, .btn-hari span {
             display: block;
             font-size: 9px;
             color: var(--text-muted);
         }
 
-        .btn-day.active {
+        .btn-day.active, .btn-hari.active {
             background-color: var(--primary-blue);
         }
 
-        .btn-day.active strong,
-        .btn-day.active span {
+        .btn-day.active strong, .btn-day.active span,
+        .btn-hari.active strong, .btn-hari.active span {
             color: #ffffff;
         }
     </style>
@@ -361,9 +364,9 @@
     <!-- Tampilan Utama Aplikasi -->
     <div class="app-card">
         
-        <!-- Header -->
+        <!-- Header Logo & Title -->
         <div class="header-section">
-            <img src="logo.png" alt="Logo" class="header-logo" onerror="this.style.display='none'">
+            <img src="logo.png" alt="Logo" class="header-logo">
             <div class="header-title-group">
                 <h4>MAKAN BERGIZI GRATIS</h4>
                 <h2>SPPG Kepuharjo 1 Lumajang</h2>
@@ -371,13 +374,13 @@
             </div>
         </div>
 
-        <!-- Info Hari -->
+        <!-- Info Hari & Tanggal -->
         <div class="day-info">
             <h1 id="hari-text">Senin</h1>
             <p id="tanggal-text">24 Agustus 2026</p>
         </div>
 
-        <!-- Gambar Menu -->
+        <!-- Gambar Menu (Ukuran Sedang) -->
         <div class="hero-image-container">
             <img id="foto-menu" src="martabak.jpg" alt="Foto Menu Hari Ini">
         </div>
@@ -417,42 +420,42 @@
                 <span class="ompreng-icon">🍚</span>
                 <div class="ompreng-info">
                     <label>Karbohidrat</label>
-                    <span id="karbo-text">Nasi Putih</span>
+                    <span id="karbo-text">-</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🍗</span>
                 <div class="ompreng-info">
                     <label>Lauk Utama</label>
-                    <span id="lauk-utama-text">Ayam Goreng</span>
+                    <span id="lauk-utama-text">-</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🍢</span>
                 <div class="ompreng-info">
                     <label>Lauk Pendamping</label>
-                    <span id="lauk-pendamping-text">Tahu Goreng</span>
+                    <span id="lauk-pendamping-text">-</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🥦</span>
                 <div class="ompreng-info">
                     <label>Sayur</label>
-                    <span id="sayur-text">Tumis Buncis</span>
+                    <span id="sayur-text">-</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🍌</span>
                 <div class="ompreng-info">
                     <label>Buah Segar</label>
-                    <span id="buah-text">Pisang</span>
+                    <span id="buah-text">-</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🥛</span>
                 <div class="ompreng-info">
                     <label>Pelengkap</label>
-                    <span id="minuman-text">Susu UHT</span>
+                    <span id="minuman-text">-</span>
                 </div>
             </div>
         </div>
@@ -474,42 +477,42 @@
                 <tbody>
                     <tr>
                         <td>Energi Total</td>
-                        <td id="energi-kecil">420 kcal</td>
-                        <td id="energi-besar">620 kcal</td>
-                        <td id="energi-bumil">720 kcal</td>
-                        <td id="energi-balita">320 kcal</td>
+                        <td id="energi-kecil">0 kcal</td>
+                        <td id="energi-besar">0 kcal</td>
+                        <td id="energi-bumil">0 kcal</td>
+                        <td id="energi-balita">0 kcal</td>
                         <td id="energi-alergen">-</td>
                     </tr>
                     <tr>
                         <td>Protein</td>
-                        <td id="protein-kecil">15g</td>
-                        <td id="protein-besar">22g</td>
-                        <td id="protein-bumil">27g</td>
-                        <td id="protein-balita">11g</td>
+                        <td id="protein-kecil">0g</td>
+                        <td id="protein-besar">0g</td>
+                        <td id="protein-bumil">0g</td>
+                        <td id="protein-balita">0g</td>
                         <td id="protein-alergen">-</td>
                     </tr>
                     <tr>
                         <td>Lemak Total</td>
-                        <td id="lemak-kecil">10g</td>
-                        <td id="lemak-besar">18g</td>
-                        <td id="lemak-bumil">22g</td>
-                        <td id="lemak-balita">8g</td>
+                        <td id="lemak-kecil">0g</td>
+                        <td id="lemak-besar">0g</td>
+                        <td id="lemak-bumil">0g</td>
+                        <td id="lemak-balita">0g</td>
                         <td id="lemak-alergen">-</td>
                     </tr>
                     <tr>
                         <td>Karbohidrat</td>
-                        <td id="karbo-kecil">52g</td>
-                        <td id="karbo-besar">75g</td>
-                        <td id="karbo-bumil">85g</td>
-                        <td id="karbo-balita">42g</td>
+                        <td id="karbo-kecil">0g</td>
+                        <td id="karbo-besar">0g</td>
+                        <td id="karbo-bumil">0g</td>
+                        <td id="karbo-balita">0g</td>
                         <td id="karbo-alergen">-</td>
                     </tr>
                     <tr>
                         <td>Serat Pangan</td>
-                        <td id="serat-kecil">3g</td>
-                        <td id="serat-besar">5g</td>
-                        <td id="serat-bumil">6g</td>
-                        <td id="serat-balita">2g</td>
+                        <td id="serat-kecil">0g</td>
+                        <td id="serat-besar">0g</td>
+                        <td id="serat-bumil">0g</td>
+                        <td id="serat-balita">0g</td>
                         <td id="serat-alergen">-</td>
                     </tr>
                 </tbody>
@@ -518,24 +521,24 @@
         <p class="akg-note">* AKG (Angka Kecukupan Gizi) dihitung berdasarkan standar Kementerian Kesehatan RI.</p>
 
         <!-- Tombol Hari (Bawah) -->
-        <div class="nav-days">
-            <button class="btn-day active" data-hari="senin">
+        <div class="nav-hari nav-days">
+            <button class="btn-hari btn-day active" data-hari="senin">
                 <strong>Senin</strong>
                 <span>24 Ags</span>
             </button>
-            <button class="btn-day" data-hari="selasa">
+            <button class="btn-hari btn-day" data-hari="selasa">
                 <strong>Selasa</strong>
                 <span>25 Ags</span>
             </button>
-            <button class="btn-day" data-hari="rabu">
+            <button class="btn-hari btn-day" data-hari="rabu">
                 <strong>Rabu</strong>
                 <span>26 Ags</span>
             </button>
-            <button class="btn-day" data-hari="kamis">
+            <button class="btn-hari btn-day" data-hari="kamis">
                 <strong>Kamis</strong>
                 <span>27 Ags</span>
             </button>
-            <button class="btn-day" data-hari="jumat">
+            <button class="btn-hari btn-day" data-hari="jumat">
                 <strong>Jumat</strong>
                 <span>28 Ags</span>
             </button>

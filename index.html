@@ -13,6 +13,7 @@
             --text-dark: #1e293b;
             --text-muted: #64748b;
             --border-light: #e2e8f0;
+            --divider-color: #cbd5e1;
             --warning-bg: #fff1f2;
             --warning-border: #ffe4e6;
             --warning-text: #991b1b;
@@ -94,7 +95,8 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--divider-color); /* Garis Pembatas Header */
         }
 
         .header-logo {
@@ -123,9 +125,12 @@
             color: var(--text-muted);
         }
 
-        /* Info Hari & Tanggal Sesuai Gambar */
+        /* Info Hari & Tanggal */
         .day-info {
-            margin-bottom: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--divider-color); /* Garis Pembatas Hari & Tanggal */
+            margin-bottom: 20px;
         }
 
         .day-info h1 {
@@ -329,6 +334,11 @@
             transition: all 0.2s;
         }
 
+        /* Mencegah penanganan klik terganggu elemen anak */
+        .btn-day *, .btn-hari * {
+            pointer-events: none;
+        }
+
         .btn-day strong, .btn-hari strong {
             display: block;
             font-size: 12px;
@@ -364,9 +374,9 @@
     <!-- Tampilan Utama Aplikasi -->
     <div class="app-card">
         
-        <!-- Header Logo & Title -->
+        <!-- Header Logo & Title (Dengan Pembatas) -->
         <div class="header-section">
-            <img src="logo-bgn.png" alt="Logo" class="header-logo">
+            <img src="logo.png" alt="Logo" class="header-logo">
             <div class="header-title-group">
                 <h4>MAKAN BERGIZI GRATIS</h4>
                 <h2>SPPG Kepuharjo 1 Lumajang</h2>
@@ -374,15 +384,15 @@
             </div>
         </div>
 
-        <!-- Info Hari & Tanggal -->
+        <!-- Info Hari & Tanggal (Dengan Pembatas) -->
         <div class="day-info">
             <h1 id="hari-text">Senin</h1>
-            <p id="tanggal-text">24 Agustus 2026</p>
+            <p id="tanggal-text">14 September 2026</p>
         </div>
 
-        <!-- Gambar Menu (Ukuran Sedang) -->
+        <!-- Gambar Menu -->
         <div class="hero-image-container">
-            <img id="foto-menu" src="martabak.jpg" alt="Foto Menu Hari Ini">
+            <img id="foto-menu" src="senin.jpg" alt="Foto Menu Hari Ini">
         </div>
 
         <!-- Box Wajib Diperhatikan -->
@@ -420,42 +430,42 @@
                 <span class="ompreng-icon">🍚</span>
                 <div class="ompreng-info">
                     <label>Karbohidrat</label>
-                    <span id="karbo-text">-</span>
+                    <span id="karbo-text">Nasi Putih</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🍗</span>
                 <div class="ompreng-info">
                     <label>Lauk Utama</label>
-                    <span id="lauk-utama-text">-</span>
+                    <span id="lauk-utama-text">Daging Blackpepper</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🍢</span>
                 <div class="ompreng-info">
                     <label>Lauk Pendamping</label>
-                    <span id="lauk-pendamping-text">-</span>
+                    <span id="lauk-pendamping-text">Tahu Kremes</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🥦</span>
                 <div class="ompreng-info">
                     <label>Sayur</label>
-                    <span id="sayur-text">-</span>
+                    <span id="sayur-text">Capcay Sawi Putih + Wortel - Pentol</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🍌</span>
                 <div class="ompreng-info">
                     <label>Buah Segar</label>
-                    <span id="buah-text">-</span>
+                    <span id="buah-text">Pisang</span>
                 </div>
             </div>
             <div class="ompreng-card">
                 <span class="ompreng-icon">🥛</span>
                 <div class="ompreng-info">
                     <label>Pelengkap</label>
-                    <span id="minuman-text">-</span>
+                    <span id="minuman-text">Susu UHT</span>
                 </div>
             </div>
         </div>
@@ -524,23 +534,23 @@
         <div class="nav-hari nav-days">
             <button class="btn-hari btn-day active" data-hari="senin">
                 <strong>Senin</strong>
-                <span>24 Ags</span>
+                <span>14 Sep</span>
             </button>
             <button class="btn-hari btn-day" data-hari="selasa">
                 <strong>Selasa</strong>
-                <span>25 Ags</span>
+                <span>15 Sep</span>
             </button>
             <button class="btn-hari btn-day" data-hari="rabu">
                 <strong>Rabu</strong>
-                <span>26 Ags</span>
+                <span>16 Sep</span>
             </button>
             <button class="btn-hari btn-day" data-hari="kamis">
                 <strong>Kamis</strong>
-                <span>27 Ags</span>
+                <span>17 Sep</span>
             </button>
             <button class="btn-hari btn-day" data-hari="jumat">
                 <strong>Jumat</strong>
-                <span>28 Ags</span>
+                <span>18 Sep</span>
             </button>
         </div>
 

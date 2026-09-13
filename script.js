@@ -7,7 +7,7 @@ const dataMenu = {
         laukUtama: "Daging Blackpepper",
         laukPendamping: "Tahu Kremes",
         sayur: "Capcay Sawi Putih + Wortel - Pentol",
-        buah: "Pisang",
+        buah: "Semangka",
         Tambahan: "Kerupuk Udang",
         foto: "menusenin.png"
     },

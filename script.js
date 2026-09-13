@@ -8,8 +8,8 @@ const dataMenu = {
         laukPendamping: "Tahu Kremes",
         sayur: "Capcay Sawi Putih + Wortel - Pentol",
         buah: "Pisang",
-        minuman: "Susu UHT",
-        foto: "senin.jpg"
+        Tambahan: "Kerupuk Udang",
+        foto: "menusenin.png"
     },
     selasa: {
         hari: "Selasa",

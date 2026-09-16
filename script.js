@@ -1,4 +1,4 @@
-// Data menu persis sesuai update terbaru
+// Data menu dan kandungan gizi per hari
 const dataMenu = {
     senin: {
         hari: "Senin",
@@ -8,8 +8,15 @@ const dataMenu = {
         laukPendamping: "Tahu Kremes",
         sayur: "Capcay Sawi Putih + Wortel - Pentol",
         buah: "Semangka",
-        Tambahan: "Kerupuk Udang",
-        foto: "menusenin.png"
+        tambahan: "Kerupuk Udang",
+        foto: "menusenin.png",
+        gizi: {
+            energi: { kecil: "514,9 Kcal", besar: "605,2 Kcal", bumil: "678,3 Kcal", balita: "478,9 Kcal", alergen: "-" },
+            protein: { kecil: "18,1g", besar: "19,8g", bumil: "22,8g", balita: "17,5g", alergen: "-" },
+            lemak: { kecil: "19,7g", besar: "19,9g", bumil: "21,1g", balita: "19,6g", alergen: "-" },
+            karbohidrat: { kecil: "69,1g", besar: "88,9g", bumil: "101,4g", balita: "61,1g", alergen: "-" },
+            serat: { kecil: "2,7g", besar: "2,9g", bumil: "3,3g", balita: "2,6g", alergen: "-" }
+        }
     },
     selasa: {
         hari: "Selasa",
@@ -19,8 +26,15 @@ const dataMenu = {
         laukPendamping: "-",
         sayur: "-",
         buah: "-",
-        minuman: "-",
-        foto: "selasa.jpg"
+        tambahan: "-",
+        foto: "selasa.jpg",
+        gizi: {
+            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
+            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+        }
     },
     rabu: {
         hari: "Rabu",
@@ -30,8 +44,15 @@ const dataMenu = {
         laukPendamping: "-",
         sayur: "-",
         buah: "-",
-        minuman: "-",
-        foto: "rabu.jpg"
+        tambahan: "-",
+        foto: "rabu.jpg",
+        gizi: {
+            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
+            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+        }
     },
     kamis: {
         hari: "Kamis",
@@ -40,9 +61,16 @@ const dataMenu = {
         laukUtama: "Terik Telur (Alergen Chicken Pop)",
         laukPendamping: "Orek Tempe dan Teri",
         sayur: "Buncis Bawang Putih",
-        buah: "Kelengkeng",
-        minuman: "-",
-        foto: "menukamis.jpg"
+        buah: "Pisang",
+        tambahan: "-",
+        foto: "menukamis.jpg",
+        gizi: {
+            energi: { kecil: "430,1 Kcal", besar: "520,4 Kcal", bumil: "624,2 Kcal", balita: "394,1 Kcal", alergen: "487,2 Kcal" },
+            protein: { kecil: "17g", besar: "18,7g", bumil: "24,4g", balita: "16,4g", alergen: "23,5g" },
+            lemak: { kecil: "13,9g", besar: "14,1g", bumil: "16g", balita: "13,8g", alergen: "17,5g" },
+            karbohidrat: { kecil: "60g", besar: "79,8g", bumil: "96g", balita: "52g", alergen: "59,4g" },
+            serat: { kecil: "2,7g", besar: "2,9g", bumil: "3,4g", balita: "2,8g", alergen: "2,7g" }
+        }
     },
     jumat: {
         hari: "Jumat",
@@ -52,8 +80,15 @@ const dataMenu = {
         laukPendamping: "Tahu Gejrot (PB Bumil)",
         sayur: "Timun + Mayow (Sekolah)",
         buah: "Pisang",
-        minuman: "Susu UHT",
-        foto: "jumat.jpg"
+        tambahan: "-",
+        foto: "jumat.jpg",
+        gizi: {
+            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
+            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+        }
     }
 };
 
@@ -76,10 +111,47 @@ function updateMenuHari(keyHari) {
     document.getElementById('sayur-text').textContent = data.sayur;
     document.getElementById('buah-text').textContent = data.buah;
     
-    // Mengecek atribut Tambahan / minuman agar tidak error
-    const pelengkapText = data.Tambahan || data.minuman || "-";
-    const pelengkapElem = document.getElementById('minuman-text');
-    if (pelengkapElem) pelengkapElem.textContent = pelengkapText;
+    // Update Tambahan / Pelengkap
+    const tambahanElem = document.getElementById('minuman-text');
+    if (tambahanElem) tambahanElem.textContent = data.tambahan || "-";
+
+    // Update Tabel Kandungan Gizi
+    if (data.gizi) {
+        // Energi
+        document.getElementById('energi-kecil').textContent = data.gizi.energi.kecil;
+        document.getElementById('energi-besar').textContent = data.gizi.energi.besar;
+        document.getElementById('energi-bumil').textContent = data.gizi.energi.bumil;
+        document.getElementById('energi-balita').textContent = data.gizi.energi.balita;
+        document.getElementById('energi-alergen').textContent = data.gizi.energi.alergen;
+
+        // Protein
+        document.getElementById('protein-kecil').textContent = data.gizi.protein.kecil;
+        document.getElementById('protein-besar').textContent = data.gizi.protein.besar;
+        document.getElementById('protein-bumil').textContent = data.gizi.protein.bumil;
+        document.getElementById('protein-balita').textContent = data.gizi.protein.balita;
+        document.getElementById('protein-alergen').textContent = data.gizi.protein.alergen;
+
+        // Lemak
+        document.getElementById('lemak-kecil').textContent = data.gizi.lemak.kecil;
+        document.getElementById('lemak-besar').textContent = data.gizi.lemak.besar;
+        document.getElementById('lemak-bumil').textContent = data.gizi.lemak.bumil;
+        document.getElementById('lemak-balita').textContent = data.gizi.lemak.balita;
+        document.getElementById('lemak-alergen').textContent = data.gizi.lemak.alergen;
+
+        // Karbohidrat
+        document.getElementById('karbo-kecil').textContent = data.gizi.karbohidrat.kecil;
+        document.getElementById('karbo-besar').textContent = data.gizi.karbohidrat.besar;
+        document.getElementById('karbo-bumil').textContent = data.gizi.karbohidrat.bumil;
+        document.getElementById('karbo-balita').textContent = data.gizi.karbohidrat.balita;
+        document.getElementById('karbo-alergen').textContent = data.gizi.karbohidrat.alergen;
+
+        // Serat
+        document.getElementById('serat-kecil').textContent = data.gizi.serat.kecil;
+        document.getElementById('serat-besar').textContent = data.gizi.serat.besar;
+        document.getElementById('serat-bumil').textContent = data.gizi.serat.bumil;
+        document.getElementById('serat-balita').textContent = data.gizi.serat.balita;
+        document.getElementById('serat-alergen').textContent = data.gizi.serat.alergen;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

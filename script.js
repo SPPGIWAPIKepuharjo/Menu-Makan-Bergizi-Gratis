@@ -61,9 +61,9 @@ const dataMenu = {
         laukUtama: "Terik Telur (Alergen Chicken Pop)",
         laukPendamping: "Orek Tempe dan Teri",
         sayur: "Buncis Bawang Putih",
-        buah: "Pisang",
+        buah: "Kelengkeng",
         tambahan: "-",
-        foto: "menukamis.jpg",
+        foto: "menukamis.jpeg",
         gizi: {
             energi: { kecil: "430,1 Kcal", besar: "520,4 Kcal", bumil: "624,2 Kcal", balita: "394,1 Kcal", alergen: "487,2 Kcal" },
             protein: { kecil: "17g", besar: "18,7g", bumil: "24,4g", balita: "16,4g", alergen: "23,5g" },

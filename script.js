@@ -1,4 +1,4 @@
-// Data menu persis sesuai tabel Siklus Menu-1 terbaru
+// Data menu persis sesuai update terbaru
 const dataMenu = {
     senin: {
         hari: "Senin",
@@ -14,35 +14,35 @@ const dataMenu = {
     selasa: {
         hari: "Selasa",
         tanggal: "15 September 2026",
-        karbo: "Nasi Putih",
-        laukUtama: "Terik Telur Alergen Ayam Pop",
-        laukPendamping: "Tempe Orek Kecap + Teri",
-        sayur: "Buncis Baput",
-        buah: "Pisang",
-        minuman: "Susu UHT",
+        karbo: "-",
+        laukUtama: "-",
+        laukPendamping: "-",
+        sayur: "-",
+        buah: "-",
+        minuman: "-",
         foto: "selasa.jpg"
     },
     rabu: {
         hari: "Rabu",
         tanggal: "16 September 2026",
-        karbo: "Nasi Putih",
-        laukUtama: "Ayam Crispy Saus Bistik Alergen Pentol",
-        laukPendamping: "Edamame",
-        sayur: "Saute Kacang Panjang + Jagung",
-        buah: "Pisang",
-        minuman: "Susu UHT",
+        karbo: "-",
+        laukUtama: "-",
+        laukPendamping: "-",
+        sayur: "-",
+        buah: "-",
+        minuman: "-",
         foto: "rabu.jpg"
     },
     kamis: {
         hari: "Kamis",
         tanggal: "17 September 2026",
         karbo: "Nasi Putih",
-        laukUtama: "Tongseng Ayam Alergen Pentol Kecap",
-        laukPendamping: "Perkedel Tahu",
-        sayur: "Tumis Pelangi Wortel + Babycorn + Sawi",
-        buah: "Pisang",
-        minuman: "Susu UHT",
-        foto: "kamis.jpg"
+        laukUtama: "Terik Telur (Alergen Chicken Pop)",
+        laukPendamping: "Orek Tempe dan Teri",
+        sayur: "Buncis Bawang Putih",
+        buah: "Kelengkeng",
+        minuman: "-",
+        foto: "menukamis.jpg"
     },
     jumat: {
         hari: "Jumat",
@@ -75,7 +75,11 @@ function updateMenuHari(keyHari) {
     document.getElementById('lauk-pendamping-text').textContent = data.laukPendamping;
     document.getElementById('sayur-text').textContent = data.sayur;
     document.getElementById('buah-text').textContent = data.buah;
-    document.getElementById('minuman-text').textContent = data.minuman;
+    
+    // Mengecek atribut Tambahan / minuman agar tidak error
+    const pelengkapText = data.Tambahan || data.minuman || "-";
+    const pelengkapElem = document.getElementById('minuman-text');
+    if (pelengkapElem) pelengkapElem.textContent = pelengkapText;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

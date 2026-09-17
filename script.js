@@ -112,10 +112,6 @@ function updateMenuHari(keyHari) {
     document.getElementById('buah-text').textContent = data.buah;
     document.getElementById('pelengkap-text').textContent = data.pelengkap;
     
-    // Update Tambahan / Pelengkap
-    const tambahanElem = document.getElementById('minuman-text');
-    if (tambahanElem) tambahanElem.textContent = data.tambahan || "-";
-
     // Update Tabel Kandungan Gizi
     if (data.gizi) {
         // Energi

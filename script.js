@@ -8,7 +8,7 @@ const dataMenu = {
         laukPendamping: "Tahu Kremes",
         sayur: "Capcay Sawi Putih + Wortel - Pentol",
         buah: "Semangka",
-        tambahan: "Kerupuk Udang",
+        pelengkap: "Kerupuk Udang",
         foto: "menusenin.png",
         gizi: {
             energi: { kecil: "514,9 Kcal", besar: "605,2 Kcal", bumil: "678,3 Kcal", balita: "478,9 Kcal", alergen: "-" },
@@ -26,7 +26,7 @@ const dataMenu = {
         laukPendamping: "-",
         sayur: "-",
         buah: "-",
-        tambahan: "-",
+        pelengkap: "-",
         foto: "selasa.jpg",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
@@ -44,7 +44,7 @@ const dataMenu = {
         laukPendamping: "-",
         sayur: "-",
         buah: "-",
-        tambahan: "-",
+        pelengkap: "-",
         foto: "rabu.jpg",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
@@ -62,7 +62,7 @@ const dataMenu = {
         laukPendamping: "Orek Tempe dan Teri",
         sayur: "Buncis Bawang Putih",
         buah: "Kelengkeng",
-        tambahan: "-",
+        pelengkap: "-",
         foto: "kamis.png",
         gizi: {
             energi: { kecil: "430,1 Kcal", besar: "520,4 Kcal", bumil: "624,2 Kcal", balita: "394,1 Kcal", alergen: "487,2 Kcal" },
@@ -80,7 +80,7 @@ const dataMenu = {
         laukPendamping: "Tahu Gejrot (PB Bumil)",
         sayur: "Timun + Mayow (Sekolah)",
         buah: "Pisang",
-        tambahan: "-",
+        pelengkap: "-",
         foto: "jumat.jpg",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },

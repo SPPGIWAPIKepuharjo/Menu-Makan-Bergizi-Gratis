@@ -8,7 +8,7 @@ const dataMenu = {
         laukPendamping: "Tahu Kremes",
         sayur: "Capcay Sawi Putih + Wortel - Pentol",
         buah: "Semangka",
-        pelengkap: "Kerupuk Udang",
+        tambahan: "Kerupuk Udang",
         foto: "menusenin.png",
         gizi: {
             energi: { kecil: "514,9 Kcal", besar: "605,2 Kcal", bumil: "678,3 Kcal", balita: "478,9 Kcal", alergen: "-" },
@@ -26,7 +26,7 @@ const dataMenu = {
         laukPendamping: "-",
         sayur: "-",
         buah: "-",
-        pelengkap: "-",
+        tambahan: "-",
         foto: "selasa.jpg",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
@@ -44,7 +44,7 @@ const dataMenu = {
         laukPendamping: "-",
         sayur: "-",
         buah: "-",
-        pelengkap: "-",
+        tambahan: "-",
         foto: "rabu.jpg",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
@@ -62,8 +62,8 @@ const dataMenu = {
         laukPendamping: "Orek Tempe dan Teri",
         sayur: "Buncis Bawang Putih",
         buah: "Kelengkeng",
-        pelengkap: "-",
-        foto: "kamis.png",
+        tambahan: "-",
+        foto: "menukamis.png",
         gizi: {
             energi: { kecil: "430,1 Kcal", besar: "520,4 Kcal", bumil: "624,2 Kcal", balita: "394,1 Kcal", alergen: "487,2 Kcal" },
             protein: { kecil: "17g", besar: "18,7g", bumil: "24,4g", balita: "16,4g", alergen: "23,5g" },
@@ -80,7 +80,7 @@ const dataMenu = {
         laukPendamping: "Tahu Gejrot (PB Bumil)",
         sayur: "Timun + Mayow (Sekolah)",
         buah: "Pisang",
-        pelengkap: "-",
+        tambahan: "-",
         foto: "jumat.jpg",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
@@ -110,8 +110,13 @@ function updateMenuHari(keyHari) {
     document.getElementById('lauk-pendamping-text').textContent = data.laukPendamping;
     document.getElementById('sayur-text').textContent = data.sayur;
     document.getElementById('buah-text').textContent = data.buah;
-    document.getElementById('pelengkap-text').textContent = data.pelengkap;
     
+    // Update Pelengkap / Tambahan (Pastikan membaca data.tambahan)
+    const pelengkapElem = document.getElementById('minuman-text');
+    if (pelengkapElem) {
+        pelengkapElem.textContent = data.tambahan || "-";
+    }
+
     // Update Tabel Kandungan Gizi
     if (data.gizi) {
         // Energi
@@ -165,6 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Set default awal ke Senin
+    // Set default awal ke Kamis (atau sesuaikan)
     updateMenuHari('senin');
 });

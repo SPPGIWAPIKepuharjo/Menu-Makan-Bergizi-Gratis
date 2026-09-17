@@ -110,6 +110,7 @@ function updateMenuHari(keyHari) {
     document.getElementById('lauk-pendamping-text').textContent = data.laukPendamping;
     document.getElementById('sayur-text').textContent = data.sayur;
     document.getElementById('buah-text').textContent = data.buah;
+    document.getElementById('pelengkap-text').textContent = data.pelengkap;
     
     // Update Tambahan / Pelengkap
     const tambahanElem = document.getElementById('minuman-text');

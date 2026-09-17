@@ -63,7 +63,7 @@ const dataMenu = {
         sayur: "Buncis Bawang Putih",
         buah: "Kelengkeng",
         pelengkap: "-",
-        foto: "kamis.png",
+        foto: "menukamis.png",
         gizi: {
             energi: { kecil: "430,1 Kcal", besar: "520,4 Kcal", bumil: "624,2 Kcal", balita: "394,1 Kcal", alergen: "487,2 Kcal" },
             protein: { kecil: "17g", besar: "18,7g", bumil: "24,4g", balita: "16,4g", alergen: "23,5g" },
@@ -96,31 +96,28 @@ function updateMenuHari(keyHari) {
     const data = dataMenu[keyHari];
     if (!data) return;
 
-    // Helper function aman update teks
     const setTxt = (id, val) => {
         const el = document.getElementById(id);
         if (el) el.textContent = val || "-";
     };
 
-    // Update Header
     setTxt('hari-text', data.hari);
     setTxt('tanggal-text', data.tanggal);
 
-    // Update Gambar
     const fotoElem = document.getElementById('foto-menu');
     if (fotoElem) fotoElem.src = data.foto;
 
-    // Update Isi Ompreng
     setTxt('karbo-text', data.karbo);
     setTxt('lauk-utama-text', data.laukUtama);
     setTxt('lauk-pendamping-text', data.laukPendamping);
     setTxt('sayur-text', data.sayur);
     setTxt('buah-text', data.buah);
     
-    // UPDATE PELENGKAP (Memakai data.pelengkap dan ID HTML pelengkap-text)
+    // UPDATE PENTING: Ditembak ke Pelengkap-text (P besar sesuai index.html)
+    setTxt('Pelengkap-text', data.pelengkap);
     setTxt('pelengkap-text', data.pelengkap);
+    setTxt('minuman-text', data.pelengkap);
 
-    // Update Tabel Gizi
     if (data.gizi) {
         setTxt('energi-kecil', data.gizi.energi.kecil);
         setTxt('energi-besar', data.gizi.energi.besar);

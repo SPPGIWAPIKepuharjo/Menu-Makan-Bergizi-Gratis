@@ -60,7 +60,7 @@ const dataMenu = {
         karbo: "Nasi Putih",
         laukUtama: "Terik Telur (Alergen Chicken Pop)",
         laukPendamping: "Orek Tempe dan Teri",
-        sayur: "Buncis Bawang Putih",
+        sayur: "Buncis bawang putih",
         buah: "Kelengkeng",
         pelengkap: "-",
         foto: "kamis.png",

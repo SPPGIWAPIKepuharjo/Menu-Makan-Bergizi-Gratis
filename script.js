@@ -15,7 +15,7 @@ const dataMenu = {
             protein: { kecil: "18,1g", besar: "19,8g", bumil: "22,8g", balita: "17,5g", alergen: "-" },
             lemak: { kecil: "19,7g", besar: "19,9g", bumil: "21,1g", balita: "19,6g", alergen: "-" },
             karbohidrat: { kecil: "69,1g", besar: "88,9g", bumil: "101,4g", balita: "61,1g", alergen: "-" },
-            serat: { kecil: "2,7g", besar: "2,9g", bumil: "3,3g", balita: "2,6g", alergen: "-" }
+            serat: { kecil: "2,7g", besar: "2,9g", bumil: "3,3g", balita: "3,3g", alergen: "-" }
         }
     },
     selasa: {
@@ -96,68 +96,66 @@ function updateMenuHari(keyHari) {
     const data = dataMenu[keyHari];
     if (!data) return;
 
-    // Update Header Hari & Tanggal
-    document.getElementById('hari-text').textContent = data.hari;
-    document.getElementById('tanggal-text').textContent = data.tanggal;
+    // Helper function aman update teks
+    const setTxt = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val || "-";
+    };
+
+    // Update Header
+    setTxt('hari-text', data.hari);
+    setTxt('tanggal-text', data.tanggal);
 
     // Update Gambar
     const fotoElem = document.getElementById('foto-menu');
     if (fotoElem) fotoElem.src = data.foto;
 
     // Update Isi Ompreng
-    document.getElementById('karbo-text').textContent = data.karbo;
-    document.getElementById('lauk-utama-text').textContent = data.laukUtama;
-    document.getElementById('lauk-pendamping-text').textContent = data.laukPendamping;
-    document.getElementById('sayur-text').textContent = data.sayur;
-    document.getElementById('buah-text').textContent = data.buah;
+    setTxt('karbo-text', data.karbo);
+    setTxt('lauk-utama-text', data.laukUtama);
+    setTxt('lauk-pendamping-text', data.laukPendamping);
+    setTxt('sayur-text', data.sayur);
+    setTxt('buah-text', data.buah);
     
-    // Update Pelengkap / Tambahan (Pastikan membaca data.tambahan)
-    const pelengkapElem = document.getElementById('pelengkap');
-    if (pelengkapElem) {
-        pelengkapElem.textContent = data.tambahan || "-";
-    }
+    // UPDATE PELENGKAP (Memakai data.pelengkap dan ID HTML pelengkap-text)
+    setTxt('pelengkap-text', data.pelengkap);
 
-    // Update Tabel Kandungan Gizi
+    // Update Tabel Gizi
     if (data.gizi) {
-        // Energi
-        document.getElementById('energi-kecil').textContent = data.gizi.energi.kecil;
-        document.getElementById('energi-besar').textContent = data.gizi.energi.besar;
-        document.getElementById('energi-bumil').textContent = data.gizi.energi.bumil;
-        document.getElementById('energi-balita').textContent = data.gizi.energi.balita;
-        document.getElementById('energi-alergen').textContent = data.gizi.energi.alergen;
+        setTxt('energi-kecil', data.gizi.energi.kecil);
+        setTxt('energi-besar', data.gizi.energi.besar);
+        setTxt('energi-bumil', data.gizi.energi.bumil);
+        setTxt('energi-balita', data.gizi.energi.balita);
+        setTxt('energi-alergen', data.gizi.energi.alergen);
 
-        // Protein
-        document.getElementById('protein-kecil').textContent = data.gizi.protein.kecil;
-        document.getElementById('protein-besar').textContent = data.gizi.protein.besar;
-        document.getElementById('protein-bumil').textContent = data.gizi.protein.bumil;
-        document.getElementById('protein-balita').textContent = data.gizi.protein.balita;
-        document.getElementById('protein-alergen').textContent = data.gizi.protein.alergen;
+        setTxt('protein-kecil', data.gizi.protein.kecil);
+        setTxt('protein-besar', data.gizi.protein.besar);
+        setTxt('protein-bumil', data.gizi.protein.bumil);
+        setTxt('protein-balita', data.gizi.protein.balita);
+        setTxt('protein-alergen', data.gizi.protein.alergen);
 
-        // Lemak
-        document.getElementById('lemak-kecil').textContent = data.gizi.lemak.kecil;
-        document.getElementById('lemak-besar').textContent = data.gizi.lemak.besar;
-        document.getElementById('lemak-bumil').textContent = data.gizi.lemak.bumil;
-        document.getElementById('lemak-balita').textContent = data.gizi.lemak.balita;
-        document.getElementById('lemak-alergen').textContent = data.gizi.lemak.alergen;
+        setTxt('lemak-kecil', data.gizi.lemak.kecil);
+        setTxt('lemak-besar', data.gizi.lemak.besar);
+        setTxt('lemak-bumil', data.gizi.lemak.bumil);
+        setTxt('lemak-balita', data.gizi.lemak.balita);
+        setTxt('lemak-alergen', data.gizi.lemak.alergen);
 
-        // Karbohidrat
-        document.getElementById('karbo-kecil').textContent = data.gizi.karbohidrat.kecil;
-        document.getElementById('karbo-besar').textContent = data.gizi.karbohidrat.besar;
-        document.getElementById('karbo-bumil').textContent = data.gizi.karbohidrat.bumil;
-        document.getElementById('karbo-balita').textContent = data.gizi.karbohidrat.balita;
-        document.getElementById('karbo-alergen').textContent = data.gizi.karbohidrat.alergen;
+        setTxt('karbo-kecil', data.gizi.karbohidrat.kecil);
+        setTxt('karbo-besar', data.gizi.karbohidrat.besar);
+        setTxt('karbo-bumil', data.gizi.karbohidrat.bumil);
+        setTxt('karbo-balita', data.gizi.karbohidrat.balita);
+        setTxt('karbo-alergen', data.gizi.karbohidrat.alergen);
 
-        // Serat
-        document.getElementById('serat-kecil').textContent = data.gizi.serat.kecil;
-        document.getElementById('serat-besar').textContent = data.gizi.serat.besar;
-        document.getElementById('serat-bumil').textContent = data.gizi.serat.bumil;
-        document.getElementById('serat-balita').textContent = data.gizi.serat.balita;
-        document.getElementById('serat-alergen').textContent = data.gizi.serat.alergen;
+        setTxt('serat-kecil', data.gizi.serat.kecil);
+        setTxt('serat-besar', data.gizi.serat.besar);
+        setTxt('serat-bumil', data.gizi.serat.bumil);
+        setTxt('serat-balita', data.gizi.serat.balita);
+        setTxt('serat-alergen', data.gizi.serat.alergen);
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const tombolHari = document.querySelectorAll('.btn-day, .btn-hari');
+    const tombolHari = document.querySelectorAll('.btn-day, .btn-hari, [data-hari]');
 
     tombolHari.forEach(button => {
         button.addEventListener('click', (e) => {
@@ -170,6 +168,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Set default awal ke Kamis (atau sesuaikan)
     updateMenuHari('senin');
 });

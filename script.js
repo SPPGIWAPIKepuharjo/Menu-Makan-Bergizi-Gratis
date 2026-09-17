@@ -60,7 +60,7 @@ const dataMenu = {
         karbo: "Nasi Putih",
         laukUtama: "Terik Telur (Alergen Chicken Pop)",
         laukPendamping: "Orek Tempe dan Teri",
-        sayur: "Buncis bawang putih",
+        sayur: "Buncis Bawang Putih",
         buah: "Kelengkeng",
         pelengkap: "-",
         foto: "kamis.png",
@@ -75,19 +75,19 @@ const dataMenu = {
     jumat: {
         hari: "Jumat",
         tanggal: "18 September 2026",
-        karbo: "Roti Bun (Sekolah) Posyandu Nasi",
-        laukUtama: "Patty Crispy Homemade",
-        laukPendamping: "Tahu Gejrot (PB Bumil)",
-        sayur: "Timun + Mayow (Sekolah)",
-        buah: "Pisang",
+        karbo: "Nasi Putih",
+        laukUtama: "Tongseng Ayam (Alergen Pentol Kecap)",
+        laukPendamping: "Perkedel Tahu",
+        sayur: "Tumis Pelangi",
+        buah: "Semangka",
         pelengkap: "-",
-        foto: "jumat.jpg",
+        foto: "jumat.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "475,3 Kcal", besar: "594 Kcal", bumil: "667,4 Kcal", balita: "439,3 Kcal", alergen: "434 Kcal" },
+            protein: { kecil: "20,7g", besar: "25g", bumil: "28g", balita: "20,1g", alergen: "16,2g" },
+            lemak: { kecil: "16,4g", besar: "18,4g", bumil: "19,6g", balita: "16,3g", alergen: "25,2g" },
+            karbohidrat: { kecil: "60,5g", besar: "80,3g", bumil: "92,8g", balita: "52,5g", alergen: "56,3g" },
+            serat: { kecil: "3,2g", besar: "3,4g", bumil: "3,8g", balita: "3,1g", alergen: "3g" }
         }
     }
 };
@@ -101,23 +101,26 @@ function updateMenuHari(keyHari) {
         if (el) el.textContent = val || "-";
     };
 
+    // Update Header
     setTxt('hari-text', data.hari);
     setTxt('tanggal-text', data.tanggal);
 
+    // Update Gambar
     const fotoElem = document.getElementById('foto-menu');
     if (fotoElem) fotoElem.src = data.foto;
 
+    // Update Isi Ompreng
     setTxt('karbo-text', data.karbo);
     setTxt('lauk-utama-text', data.laukUtama);
     setTxt('lauk-pendamping-text', data.laukPendamping);
     setTxt('sayur-text', data.sayur);
     setTxt('buah-text', data.buah);
     
-    // UPDATE PENTING: Ditembak ke Pelengkap-text (P besar sesuai index.html)
-    setTxt('Pelengkap-text', data.pelengkap);
-    setTxt('pelengkap-text', data.pelengkap);
-    setTxt('minuman-text', data.pelengkap);
+    // Update Pelengkap
+    const nilaiPelengkap = data.pelengkap || data.Tambahan || data.tambahan || "-";
+    setTxt('pelengkap-text', nilaiPelengkap);
 
+    // Update Tabel Gizi
     if (data.gizi) {
         setTxt('energi-kecil', data.gizi.energi.kecil);
         setTxt('energi-besar', data.gizi.energi.besar);

@@ -9,7 +9,7 @@ const dataMenu = {
         sayur: "Tumis Labu Siam + Wortel",
         buah: "Kelengkeng",
         pelengkap: "-",
-        foto: "menusenin.png",
+        foto: "20.PNG",
         gizi: {
             energi: { kecil: "446,6 Kcal", besar: "540,1 Kcal", bumil: "643,9 Kcal", balita: "410,6 Kcal", alergen: "-" },
             protein: { kecil: "19,6g", besar: "21,4g", bumil: "27,1g", balita: "19g", alergen: "-" },

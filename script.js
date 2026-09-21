@@ -18,22 +18,22 @@ const dataMenu = {
             serat: { kecil: "3g", besar: "3,5g", bumil: "4g", balita: "2,9g", alergen: "-" }
         }
     },
-    selasa: {
+        selasa: {
         hari: "Selasa",
         tanggal: "22 September 2026",
         karbo: "Nasi Putih",
         laukUtama: "Ayam Crispy Saus Bistik Alergen Pentol Kecap",
         laukPendamping: "Edamame",
         sayur: "Saute Kacang Panjang + Jagung",
-        buah: "-",
+        buah: "Semangka",
         pelengkap: "-",
-        foto: "selasa.jpg",
+        foto: "22.PNG",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "491,7 Kcal", besar: "610,4 Kcal", bumil: "664,5 Kcal", balita: "455,7 Kcal", alergen: "385,7 Kcal" },
+            protein: { kecil: "17,6g", besar: "21,9g", bumil: "22,9g", balita: "17g", alergen: "11,2g" },
+            lemak: { kecil: "13,7g", besar: "15,7g", bumil: "15,7g", balita: "13,6g", alergen: "22,8g" },
+            karbohidrat: { kecil: "70,5g", besar: "90,3g", bumil: "102,3g", balita: "62,5g", alergen: "52,5g" },
+            serat: { kecil: "2,1g", besar: "2,3g", bumil: "2,4g", balita: "2g", alergen: "2g" }
         }
     },
     rabu: {

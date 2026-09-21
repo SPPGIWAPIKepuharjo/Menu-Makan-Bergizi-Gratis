@@ -27,7 +27,7 @@ const dataMenu = {
         sayur: "Saute Kacang Panjang + Jagung",
         buah: "Semangka",
         pelengkap: "-",
-        foto: "22.PNG",
+        foto: "22.png",
         gizi: {
             energi: { kecil: "491,7 Kcal", besar: "610,4 Kcal", bumil: "664,5 Kcal", balita: "455,7 Kcal", alergen: "385,7 Kcal" },
             protein: { kecil: "17,6g", besar: "21,9g", bumil: "22,9g", balita: "17g", alergen: "11,2g" },

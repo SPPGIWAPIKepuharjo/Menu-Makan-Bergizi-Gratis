@@ -36,22 +36,22 @@ const dataMenu = {
             serat: { kecil: "2,1g", besar: "2,3g", bumil: "2,4g", balita: "2g", alergen: "2g" }
         }
     },
-    rabu: {
+        rabu: {
         hari: "Rabu",
         tanggal: "23 September 2026",
         karbo: "Nasi Putih",
         laukUtama: "Nuget Chiken Finger",
         laukPendamping: "Tahu Sutra Crispy",
         sayur: "Saute Mix Vege *wortel+jagung+polong",
-        buah: "-",
+        buah: "Jeruk Semboro",
         pelengkap: "-",
-        foto: "rabu.jpg",
+        foto: "23.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "537.7 Kcal", besar: "628 Kcal", bumil: "701.1 Kcal", balita: "501.7 Kcal", alergen: "-" },
+            protein: { kecil: "20.8g", besar: "22.5g", bumil: "25.5g", balita: "20.2g", alergen: "-" },
+            lemak: { kecil: "15.4g", besar: "15.6g", bumil: "16.8g", balita: "15.3g", alergen: "-" },
+            karbohidrat: { kecil: "76.7g", besar: "96.5g", bumil: "109g", balita: "68.7g", alergen: "-" },
+            serat: { kecil: "4.8g", besar: "5g", bumil: "5.4g", balita: "4.7g", alergen: "-" }
         }
     },
     kamis: {

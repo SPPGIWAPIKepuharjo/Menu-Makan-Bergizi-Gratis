@@ -54,22 +54,22 @@ const dataMenu = {
             serat: { kecil: "4.8g", besar: "5g", bumil: "5.4g", balita: "4.7g", alergen: "-" }
         }
     },
-    kamis: {
+        kamis: {
         hari: "Kamis",
         tanggal: "24 September 2026",
         karbo: "Nasi Putih",
         laukUtama: "Telur Fuyunghai *saos + kc polong",
         laukPendamping: "Tempe Kemul",
         sayur: "Capcay Sawi Putih + Wortel - Pentol",
-        buah: "-",
+        buah: "Anggur Red Globe",
         pelengkap: "-",
-        foto: "menukamis.png",
+        foto: "24.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "485.5 Kcal", besar: "575.8 Kcal", bumil: "714.6 Kcal", balita: "449.5 Kcal", alergen: "500.2 Kcal" },
+            protein: { kecil: "20.7g", besar: "22.4g", bumil: "29.1g", balita: "20.1g", alergen: "23.5g" },
+            lemak: { kecil: "17.5g", besar: "17.7g", bumil: "19.7g", balita: "17.4g", alergen: "18.4g" },
+            karbohidrat: { kecil: "65.4g", besar: "85.2g", bumil: "108.4g", balita: "57.4g", alergen: "63.9g" },
+            serat: { kecil: "2.4g", besar: "2.6g", bumil: "3.1g", balita: "2.3g", alergen: "2.3g" }
         }
     },
     jumat: {

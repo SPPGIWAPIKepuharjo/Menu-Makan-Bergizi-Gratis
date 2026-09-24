@@ -81,7 +81,7 @@ const dataMenu = {
         sayur: "Timun + Tomat Mayow (Sekolah)",
         buah: "Melon",
         pelengkap: "-",
-        foto: "jumat.jpg",
+        foto: "25.png",
         gizi: {
             energi: { kecil: "506.9 Kcal", besar: "535.4 Kcal", bumil: "611.3 Kcal", balita: "506.9 Kcal", alergen: "-" },
             protein: { kecil: "18.6g", besar: "21.3g", bumil: "28.6g", balita: "18.6g", alergen: "-" },

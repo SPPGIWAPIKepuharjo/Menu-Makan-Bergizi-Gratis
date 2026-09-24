@@ -72,26 +72,24 @@ const dataMenu = {
             serat: { kecil: "2.4g", besar: "2.6g", bumil: "3.1g", balita: "2.3g", alergen: "2.3g" }
         }
     },
-    jumat: {
+            jumat: {
         hari: "Jumat",
         tanggal: "25 September 2026",
         karbo: "Roti Bun",
         laukUtama: "Patty Crispy Homemade",
         laukPendamping: "Tahu Gejrot (PB Bumil)",
         sayur: "Timun + Tomat Mayow (Sekolah)",
-        buah: "-",
+        buah: "Melon",
         pelengkap: "-",
         foto: "jumat.jpg",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "506.9 Kcal", besar: "535.4 Kcal", bumil: "611.3 Kcal", balita: "506.9 Kcal", alergen: "-" },
+            protein: { kecil: "18.6g", besar: "21.3g", bumil: "28.6g", balita: "18.6g", alergen: "-" },
+            lemak: { kecil: "17g", besar: "18.9g", bumil: "23.8g", balita: "17g", alergen: "-" },
+            karbohidrat: { kecil: "60.6g", besar: "60.6g", bumil: "61.1g", balita: "60.6g", alergen: "-" },
+            serat: { kecil: "2.5g", besar: "2.5g", bumil: "2.8g", balita: "2.5g", alergen: "-" }
         }
-    }
-};
-
+    },
 function updateMenuHari(keyHari) {
     const data = dataMenu[keyHari];
     if (!data) return;

@@ -9,7 +9,7 @@ const dataMenu = {
         sayur: "Tumis Labu Siam + Tahu",
         buah: "Pisang",
         pelengkap: "-",
-        foto: "menusenin.png",
+        foto: "senin.png",
         gizi: {
             energi: { kecil: "515.1 Kcal", besar: "605.4 Kcal", bumil: "709.2 Kcal", balita: "479.1 Kcal", alergen: "536.2 Kcal" },
             protein: { kecil: "18.1g", besar: "19.8g", bumil: "25.5g", balita: "17.5g", alergen: "24g" },

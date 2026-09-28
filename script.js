@@ -18,22 +18,22 @@ const dataMenu = {
             serat: { kecil: "3.6g", besar: "3.8g", bumil: "4.3g", balita: "3.5g", alergen: "3.5g" }
         }
     },
-    selasa: {
+        selasa: {
         hari: "Selasa",
         tanggal: "29 September 2026",
         karbo: "Nasi Putih",
         laukUtama: "Ayam Goreng Laos",
         laukPendamping: "Tahu Kuning Goreng",
         sayur: "Sambel Goreng Kentang Wortel (PB Bumil) / Tumis Buncis Wortel (PK Balita)",
-        buah: "-",
+        buah: "Melon",
         pelengkap: "-",
-        foto: "selasa.jpg",
+        foto: "selasa.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "449.9 Kcal", besar: "554.7 Kcal", bumil: "627.8 Kcal", balita: "413.9 Kcal", alergen: "-" },
+            protein: { kecil: "20g", besar: "21.7g", bumil: "24.7g", balita: "19.4g", alergen: "-" },
+            lemak: { kecil: "16.3g", besar: "16.4g", bumil: "17.6g", balita: "16.2g", alergen: "-" },
+            karbohidrat: { kecil: "54.8g", besar: "78g", bumil: "90.5g", balita: "46.8g", alergen: "-" },
+            serat: { kecil: "2.6g", besar: "2.4g", bumil: "2.8g", balita: "2.5g", alergen: "-" }
         }
     },
     rabu: {

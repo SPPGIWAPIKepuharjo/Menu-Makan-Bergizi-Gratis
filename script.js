@@ -58,18 +58,18 @@ const dataMenu = {
         hari: "Kamis",
         tanggal: "01 Oktober 2026",
         karbo: "Nasi Putih",
-        laukUtama: "-",
-        laukPendamping: "-",
-        sayur: "-",
-        buah: "-",
-        pelengkap: "Kerupuk",
-        foto: "menukamis.png",
+        laukUtama: "Empal Daging",
+        laukPendamping: "Tempe Goreng",
+        sayur: "Sayur Sop",
+        buah: "Jeruk Jawara",
+        pelengkap: "-",
+        foto: "kamis.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "466 Kcal", besar: "556.3 Kcal", bumil: "660.1 Kcal", balita: "430 Kcal", alergen: "-" },
+            protein: { kecil: "22.8g", besar: "24.2g", bumil: "29.9g", balita: "21.9g", alergen: "-" },
+            lemak: { kecil: "14.9g", besar: "15.1g", bumil: "17g", balita: "14.8g", alergen: "-" },
+            karbohidrat: { kecil: "65.9g", besar: "85.7g", bumil: "101.9g", balita: "57.9g", alergen: "-" },
+            serat: { kecil: "4.6g", besar: "4.8g", bumil: "5.3g", balita: "4.5g", alergen: "-" }
         }
     },
     jumat: {

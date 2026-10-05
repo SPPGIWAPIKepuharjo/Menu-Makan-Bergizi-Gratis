@@ -24,16 +24,16 @@ const dataMenu = {
         karbo: "Nasi Putih",
         laukUtama: "Ayam Rambutan *Adonan ayam spt biasa bm Koloke",
         laukPendamping: "Edamame",
-        sayur: "Capcay Sawi Putih + Wortel + Pentol",
-        buah: "-",
+        sayur: "Capcay Pakcoy + Wortel + Pentol",
+        buah: "Melon",
         pelengkap: "-",
-        foto: "selasa.jpg",
+        foto: "selasa.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "484.5 Kcal", besar: "574.8 Kcal", bumil: "660.8 Kcal", balita: "448.5 Kcal", alergen: "-" },
+            protein: { kecil: "17.9g", besar: "19.6g", bumil: "23.2g", balita: "17.3g", alergen: "-" },
+            lemak: { kecil: "17.6g", besar: "17.8g", bumil: "19.6g", balita: "17.5g", alergen: "-" },
+            karbohidrat: { kecil: "60g", besar: "79.8g", bumil: "91.9g", balita: "52g", alergen: "-" },
+            serat: { kecil: "1.4g", besar: "1.6g", bumil: "1.7g", balita: "1.3g", alergen: "-" }
         }
     },
     rabu: {

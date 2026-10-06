@@ -45,7 +45,7 @@ const dataMenu = {
         sayur: "Tumis Labu Siam + Jagung",
         buah: "Jeruk Keprok",
         pelengkap: "Saus Asam Manis",
-        foto: "rabu.jpg",
+        foto: "rabu.png",
         gizi: {
             energi: { kecil: "423.9 Kcal", besar: "514.2 Kcal", bumil: "587.3 Kcal", balita: "387.9 Kcal", alergen: "453.9 Kcal" },
             protein: { kecil: "14.3g", besar: "16g", bumil: "19g", balita: "13.7g", alergen: "14.3g" },

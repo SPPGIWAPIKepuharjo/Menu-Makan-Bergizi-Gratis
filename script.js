@@ -36,22 +36,22 @@ const dataMenu = {
             serat: { kecil: "1.4g", besar: "1.6g", bumil: "1.7g", balita: "1.3g", alergen: "-" }
         }
     },
-    rabu: {
+        rabu: {
         hari: "Rabu",
         tanggal: "07 Oktober 2026",
         karbo: "Nasi Putih",
-        laukUtama: "Rolade Telur Saus Padang",
+        laukUtama: "Rolade Telur Saus Padang (Alergen Pentol Goreng)",
         laukPendamping: "Orek Tahu Kemangi",
         sayur: "Tumis Labu Siam + Jagung",
-        buah: "Pisang",
-        pelengkap: "-",
+        buah: "Jeruk Keprok",
+        pelengkap: "Saus Asam Manis",
         foto: "rabu.jpg",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "423.9 Kcal", besar: "514.2 Kcal", bumil: "587.3 Kcal", balita: "387.9 Kcal", alergen: "453.9 Kcal" },
+            protein: { kecil: "14.3g", besar: "16g", bumil: "19g", balita: "13.7g", alergen: "14.3g" },
+            lemak: { kecil: "12.9g", besar: "13.1g", bumil: "14.3g", balita: "12.8g", alergen: "24.2g" },
+            karbohidrat: { kecil: "66g", besar: "85.8g", bumil: "98.3g", balita: "58g", alergen: "69.5g" },
+            serat: { kecil: "4.2g", besar: "4.4g", bumil: "4.8g", balita: "4.1g", alergen: "4.2g" }
         }
     },
     kamis: {

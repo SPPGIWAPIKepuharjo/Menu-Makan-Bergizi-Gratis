@@ -61,9 +61,9 @@ const dataMenu = {
         laukUtama: "Ayam Panggang Madu",
         laukPendamping: "Tahu Padat Goreng",
         sayur: "Buncis Baput",
-        buah: "-",
+        buah: "Semangka",
         pelengkap: "-",
-        foto: "menukamis.png",
+        foto: "kamis.png",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
             protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },

@@ -7,8 +7,8 @@ const dataMenu = {
         laukUtama: "Ayam geprek Sambal Hijau (PB Bumil) / Ayam saos tomat (PK Balita)",
         laukPendamping: "Tahu Bm Mentega",
         sayur: "Lalap Kubis + Timun (PK Bumil) / Tumis Wortel + Sawi + Pentol (PK Balita)",
-        buah: "Semangka",
-        pelengkap: "Sambal Ijo",
+        buah: "Anggur",
+        pelengkap: "-",
         foto: "menusenin.png",
         gizi: {
             energi: { kecil: "527.7 Kcal", besar: "599.4 Kcal", bumil: "691.1 Kcal", balita: "491.7 Kcal", alergen: "-" },
@@ -27,31 +27,31 @@ const dataMenu = {
         sayur: "Capcay Sawi Putih + Wortel + Pentol",
         buah: "Pisang",
         pelengkap: "-",
-        foto: "selasa.jpg",
+        foto: "selasa.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "544.6 Kcal", besar: "634.9 Kcal", bumil: "738.7 Kcal", balita: "508.6 Kcal", alergen: "-" },
+            protein: { kecil: "15.3g", besar: "17g", bumil: "22.7g", balita: "14.7g", alergen: "-" },
+            lemak: { kecil: "11.5g", besar: "11.7g", bumil: "13.6g", balita: "11.4g", alergen: "-" },
+            karbohidrat: { kecil: "82.5g", besar: "102.3g", bumil: "118.5g", balita: "74.5g", alergen: "-" },
+            serat: { kecil: "4.5g", besar: "4.7g", bumil: "5.2g", balita: "4.4g", alergen: "-" }
         }
     },
     rabu: {
         hari: "Rabu",
         tanggal: "14 Oktober 2026",
         karbo: "Nasi Nori",
-        laukUtama: "Telur Dadar Okonomiyaki",
+        laukUtama: "Telur Dadar Okonomiyaki (Alergen Ayam Crispy)",
         laukPendamping: "Tahu Crispy *tp basah (+kucai)",
         sayur: "Curry Jagung Wortel",
-        buah: "-",
+        buah: "Melon",
         pelengkap: "-",
-        foto: "rabu.jpg",
+        foto: "rabu.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "439.2 Kcal", besar: "529.5 Kcal", bumil: "602.6 Kcal", balita: "403.2 Kcal", alergen: "491.4 Kcal" },
+            protein: { kecil: "15.4g", besar: "17.1g", bumil: "20.1g", balita: "14.8g", alergen: "21.4g" },
+            lemak: { kecil: "13.1g", besar: "13.3g", bumil: "14.5g", balita: "13g", alergen: "16.5g" },
+            karbohidrat: { kecil: "63.9g", besar: "83.7g", bumil: "96.2g", balita: "55.9g", alergen: "62.6g" },
+            serat: { kecil: "2.2g", besar: "2.4g", bumil: "2.8g", balita: "2.1g", alergen: "2.1g" }
         }
     },
     kamis: {

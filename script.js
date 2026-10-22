@@ -1,16 +1,3 @@
-Berikut adalah rincian total nilai gizi untuk Kamis (22 Oktober) dan Jumat (23 Oktober) beserta kode pembaruan lengkap file script.js:
-Ringkasan Total Nilai Gizi
-1. Kamis, 22 Oktober 2026 (Menu: Rawon Daging, Buah: Pisang)
- * Porsi Besar: Energi 599.5 Kcal | Protein 21.4g | Lemak 15.7g | Karbohidrat 83.8g | Serat 3.7g
- * Porsi Kecil: Energi 509.2 Kcal | Protein 19.7g | Lemak 15.5g | Karbohidrat 64g | Serat 3.5g
- * Bumil & Busui: Energi 703.3 Kcal | Protein 27.1g | Lemak 17.6g | Karbohidrat 100g | Serat 4.2g
- * Balita: Energi 473.2 Kcal | Protein 19.1g | Lemak 15.4g | Karbohidrat 56g | Serat 3.4g
-2. Jumat, 23 Oktober 2026 (Menu: Roti Bun & Chiken Patty, Buah: Semangka)
- * Porsi Besar: Energi 531.1 Kcal | Protein 21.4g | Lemak 22.7g | Karbohidrat 56.9g | Serat 3.1g
- * Porsi Kecil: Energi 502.6 Kcal | Protein 18.7g | Lemak 20.8g | Karbohidrat 56.9g | Serat 3.1g
- * Bumil & Busui: Energi 588 Kcal | Protein 26.7g | Lemak 26.4g | Karbohidrat 56.9g | Serat 3.1g
- * Balita: Energi 502.6 Kcal | Protein 18.7g | Lemak 20.8g | Karbohidrat 56.9g | Serat 3.1g
-Kode Lengkap script.js (Tinggal Salin & Gantikan Seluruh Isi File)
 // Data menu dan kandungan gizi per hari (Siklus Menu-2)
 const dataMenu = {
     senin: {

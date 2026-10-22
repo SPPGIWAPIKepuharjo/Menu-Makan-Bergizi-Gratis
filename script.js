@@ -170,5 +170,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateMenuHari('senin');
 });
-
-Tinggal salin semua kode di atas dan gantikan (replace) ke file script.js, lalu simpan dengan Commit changes!

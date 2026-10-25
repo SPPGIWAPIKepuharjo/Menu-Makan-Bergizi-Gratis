@@ -1,93 +1,93 @@
-// Data menu dan kandungan gizi per hari (Siklus Menu-2)
+// Data menu dan kandungan gizi per hari (Siklus Menu-1)
 const dataMenu = {
     senin: {
         hari: "Senin",
-        tanggal: "19 Oktober 2026",
-        karbo: "Nasi Gurih",
-        laukUtama: "Telur Ceplok Abon (Alergen Pentol Goreng Abon)",
-        laukPendamping: "Tempe Orek Kemangi",
-        sayur: "Tumis Buncis Jagung",
-        buah: "Melon",
+        tanggal: "26 Oktober 2026",
+        karbo: "Nasi Putih",
+        laukUtama: "Lapis Daging",
+        laukPendamping: "Kering Tempe",
+        sayur: "Kimlo Wortel Jamur Kuping",
+        buah: "Jeruk",
         pelengkap: "-",
         foto: "senin.png",
         gizi: {
-            energi: { kecil: "454.4 Kcal", besar: "544.7 Kcal", bumil: "648.5 Kcal", balita: "418.4 Kcal", alergen: "447.1 Kcal" },
-            protein: { kecil: "19.5g", besar: "21.2g", bumil: "26.9g", balita: "18.9g", alergen: "19g" },
-            lemak: { kecil: "14.4g", besar: "14.6g", bumil: "16.5g", balita: "14.3g", alergen: "25.5g" },
-            karbohidrat: { kecil: "62g", besar: "81.8g", bumil: "98g", balita: "54g", alergen: "57.4g" },
-            serat: { kecil: "2.2g", besar: "2.4g", bumil: "2.9g", balita: "2.1g", alergen: "2.1g" }
+            energi: { kecil: "509.5 Kcal", besar: "599.8 Kcal", bumil: "703.6 Kcal", balita: "473.5 Kcal", alergen: "-" },
+            protein: { kecil: "19.7g", besar: "21.4g", bumil: "27.1g", balita: "19.1g", alergen: "-" },
+            lemak: { kecil: "15g", besar: "15.2g", bumil: "17.1g", balita: "14.9g", alergen: "-" },
+            karbohidrat: { kecil: "76.7g", besar: "96.5g", bumil: "112.7g", balita: "68.7g", alergen: "-" },
+            serat: { kecil: "4.3g", besar: "4.5g", bumil: "5g", balita: "4.2g", alergen: "-" }
         }
     },
     selasa: {
         hari: "Selasa",
-        tanggal: "20 Oktober 2026",
+        tanggal: "27 Oktober 2026",
         karbo: "Nasi Putih",
-        laukUtama: "Ayam Koloke",
-        laukPendamping: "Tahu Goreng",
-        sayur: "Capcay Sawi Putih + Wortel + Pentol",
-        buah: "Semangka",
+        laukUtama: "Chiken Strip Richeese Sauce (PB Bumil) / Chiken Strip Rose Sauce (PK Balita)",
+        laukPendamping: "Tahu Sutra Goreng",
+        sayur: "Saute Buncis Jagung",
+        buah: "-",
         pelengkap: "-",
-        foto: "selasa.png",
+        foto: "selasa.jpg",
         gizi: {
-            energi: { kecil: "499.3 Kcal", besar: "618 Kcal", bumil: "691.1 Kcal", balita: "463.3 Kcal", alergen: "-" },
-            protein: { kecil: "20.8g", besar: "25.1g", bumil: "28.1g", balita: "20.2g", alergen: "-" },
-            lemak: { kecil: "18.2g", besar: "20.2g", bumil: "21.4g", balita: "18.1g", alergen: "-" },
-            karbohidrat: { kecil: "66.3g", besar: "86.1g", bumil: "98.6g", balita: "58.3g", alergen: "-" },
-            serat: { kecil: "2.1g", besar: "2.3g", bumil: "2.7g", balita: "2g", alergen: "-" }
+            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
+            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
         }
     },
     rabu: {
         hari: "Rabu",
-        tanggal: "21 Oktober 2026",
-        karbo: "Lontong (PB Bumil) / Nasi Putih (PK Balita)",
-        laukUtama: "Tahu Telur Ayam",
-        laukPendamping: "Bumbu Kacang Tahu Crispy",
-        sayur: "Kubis + Timun + Kacang Panjang (PB Bumil) / Sayur Bening (PK Balita)",
-        buah: "Kelengkeng",
+        tanggal: "28 Oktober 2026",
+        karbo: "Nasi Gurih",
+        laukUtama: "Telur Ceplok Pepes Kemangi",
+        laukPendamping: "Tempe Kemul",
+        sayur: "Tumis Labu Siam Tahu",
+        buah: "Jeruk Baby Java",
         pelengkap: "-",
-        foto: "rabu.png",
+        foto: "rabu.jpg",
         gizi: {
-            energi: { kecil: "400.9 Kcal", besar: "555.1 Kcal", bumil: "609.1 Kcal", balita: "364.9 Kcal", alergen: "-" },
-            protein: { kecil: "15.2g", besar: "19.6g", bumil: "22.6g", balita: "14.6g", alergen: "-" },
-            lemak: { kecil: "10.9g", besar: "26.5g", bumil: "27.8g", balita: "10.8g", alergen: "-" },
-            karbohidrat: { kecil: "62.7g", besar: "73.2g", bumil: "80.7g", balita: "54.7g", alergen: "-" },
-            serat: { kecil: "3.3g", besar: "6.2g", bumil: "6.5g", balita: "3.2g", alergen: "-" }
+            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
+            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
         }
     },
     kamis: {
         hari: "Kamis",
-        tanggal: "22 Oktober 2026",
+        tanggal: "29 Oktober 2026",
         karbo: "Nasi Putih",
-        laukUtama: "Rawon Daging",
-        laukPendamping: "Tempe Goreng",
-        sayur: "Labu Siam + Toge",
-        buah: "Pisang",
+        laukUtama: "Ayam Bakar *Sambal Tomat(Khusus PB,Bumil)",
+        laukPendamping: "Tahu Kremes",
+        sayur: "Lalap Kubis + Timun (PB) / Tumis Kc Panjang Kecap (Bumil,PK,Balita)",
+        buah: "-",
         pelengkap: "-",
-        foto: "kamis.png",
+        foto: "menukamis.png",
         gizi: {
-            energi: { kecil: "509.2 Kcal", besar: "599.5 Kcal", bumil: "703.3 Kcal", balita: "473.2 Kcal", alergen: "-" },
-            protein: { kecil: "19.7g", besar: "21.4g", bumil: "27.1g", balita: "19.1g", alergen: "-" },
-            lemak: { kecil: "15.5g", besar: "15.7g", bumil: "17.6g", balita: "15.4g", alergen: "-" },
-            karbohidrat: { kecil: "64g", besar: "83.8g", bumil: "100g", balita: "56g", alergen: "-" },
-            serat: { kecil: "3.5g", besar: "3.7g", bumil: "4.2g", balita: "3.4g", alergen: "-" }
+            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
+            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
         }
     },
     jumat: {
         hari: "Jumat",
-        tanggal: "23 Oktober 2026",
-        karbo: "Roti Bun",
-        laukUtama: "Chiken Patty",
-        laukPendamping: "Kacang Rebus",
-        sayur: "Timun Slice",
-        buah: "Semangka",
+        tanggal: "30 Oktober 2026",
+        karbo: "Roti Tawar",
+        laukUtama: "Dimsum Ayam Homemade",
+        laukPendamping: "Edamame",
+        sayur: "Creamy Cream Sup (Polong Wortel Jagung)",
+        buah: "-",
         pelengkap: "-",
-        foto: "jumat.png",
+        foto: "jumat.jpg",
         gizi: {
-            energi: { kecil: "502.6 Kcal", besar: "531.1 Kcal", bumil: "588 Kcal", balita: "502.6 Kcal", alergen: "-" },
-            protein: { kecil: "18.7g", besar: "21.4g", bumil: "26.7g", balita: "18.7g", alergen: "-" },
-            lemak: { kecil: "20.8g", besar: "22.7g", bumil: "26.4g", balita: "20.8g", alergen: "-" },
-            karbohidrat: { kecil: "56.9g", besar: "56.9g", bumil: "56.9g", balita: "56.9g", alergen: "-" },
-            serat: { kecil: "3.1g", besar: "3.1g", bumil: "3.1g", balita: "3.1g", alergen: "-" }
+            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
+            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
+            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
         }
     }
 };

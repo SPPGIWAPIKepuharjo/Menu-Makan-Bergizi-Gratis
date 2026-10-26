@@ -18,22 +18,22 @@ const dataMenu = {
             serat: { kecil: "4.3g", besar: "4.5g", bumil: "5g", balita: "4.2g", alergen: "-" }
         }
     },
-    selasa: {
+      selasa: {
         hari: "Selasa",
         tanggal: "27 Oktober 2026",
         karbo: "Nasi Putih",
         laukUtama: "Chiken Strip Richeese Sauce (PB Bumil) / Chiken Strip Rose Sauce (PK Balita)",
         laukPendamping: "Tahu Sutra Goreng",
         sayur: "Saute Buncis Jagung",
-        buah: "-",
+        buah: "Semangka",
         pelengkap: "-",
-        foto: "selasa.jpg",
+        foto: "selasa.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "502.7 Kcal", besar: "621.4 Kcal", bumil: "694.5 Kcal", balita: "466.7 Kcal", alergen: "-" },
+            protein: { kecil: "19.7g", besar: "24g", bumil: "27g", balita: "19.1g", alergen: "-" },
+            lemak: { kecil: "15g", besar: "17g", bumil: "18.2g", balita: "14.9g", alergen: "-" },
+            karbohidrat: { kecil: "72.3g", besar: "92.1g", bumil: "104.6g", balita: "64.3g", alergen: "-" },
+            serat: { kecil: "2.4g", besar: "2.6g", bumil: "3g", balita: "2.3g", alergen: "-" }
         }
     },
     rabu: {

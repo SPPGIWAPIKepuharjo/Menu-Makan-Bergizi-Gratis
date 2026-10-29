@@ -18,7 +18,7 @@ const dataMenu = {
             serat: { kecil: "4.3g", besar: "4.5g", bumil: "5g", balita: "4.2g", alergen: "-" }
         }
     },
-      selasa: {
+    selasa: {
         hari: "Selasa",
         tanggal: "27 Oktober 2026",
         karbo: "Nasi Putih",
@@ -40,18 +40,18 @@ const dataMenu = {
         hari: "Rabu",
         tanggal: "28 Oktober 2026",
         karbo: "Nasi Gurih",
-        laukUtama: "Telur Ceplok Pepes Kemangi",
+        laukUtama: "Telur Ceplok Pepes Kemangi (Alergen Pentol Bakar Kecap)",
         laukPendamping: "Tempe Kemul",
         sayur: "Tumis Labu Siam Tahu",
-        buah: "Jeruk Baby Java",
+        buah: "Apel",
         pelengkap: "-",
-        foto: "rabu.jpg",
+        foto: "rabu.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "481.1 Kcal", besar: "571.4 Kcal", bumil: "675.2 Kcal", balita: "445.1 Kcal", alergen: "473.8 Kcal" },
+            protein: { kecil: "17.4g", besar: "19.1g", bumil: "24.8g", balita: "16.8g", alergen: "16.9g" },
+            lemak: { kecil: "14.6g", besar: "14.8g", bumil: "16.7g", balita: "14.5g", alergen: "25.7g" },
+            karbohidrat: { kecil: "71.1g", besar: "90.9g", bumil: "107.1g", balita: "63.1g", alergen: "66.5g" },
+            serat: { kecil: "3.8g", besar: "4g", bumil: "4.5g", balita: "3.7g", alergen: "3.7g" }
         }
     },
     kamis: {
@@ -61,15 +61,15 @@ const dataMenu = {
         laukUtama: "Ayam Bakar *Sambal Tomat(Khusus PB,Bumil)",
         laukPendamping: "Tahu Kremes",
         sayur: "Lalap Kubis + Timun (PB) / Tumis Kc Panjang Kecap (Bumil,PK,Balita)",
-        buah: "-",
-        pelengkap: "-",
-        foto: "menukamis.png",
+        buah: "Melon",
+        pelengkap: "Sambal Tomat",
+        foto: "kamis.png",
         gizi: {
-            energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
-            protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            lemak: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            karbohidrat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
-            serat: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" }
+            energi: { kecil: "506.1 Kcal", besar: "573.6 Kcal", bumil: "669.5 Kcal", balita: "470.1 Kcal", alergen: "-" },
+            protein: { kecil: "21.2g", besar: "24.2g", bumil: "25.9g", balita: "20.6g", alergen: "-" },
+            lemak: { kecil: "19.7g", besar: "16.5g", bumil: "21.1g", balita: "19.6g", alergen: "-" },
+            karbohidrat: { kecil: "63.9g", besar: "82.5g", bumil: "96.2g", balita: "55.9g", alergen: "-" },
+            serat: { kecil: "1.8g", besar: "2.1g", bumil: "2.4g", balita: "1.7g", alergen: "-" }
         }
     },
     jumat: {
@@ -81,7 +81,7 @@ const dataMenu = {
         sayur: "Creamy Cream Sup (Polong Wortel Jagung)",
         buah: "-",
         pelengkap: "-",
-        foto: "jumat.jpg",
+        foto: "jumat.png",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
             protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },

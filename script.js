@@ -9,7 +9,7 @@ const dataMenu = {
         sayur: "Tumis Pokcoy Pentol",
         buah: "Pisang",
         pelengkap: "-",
-        foto: "senin.jpg",
+        foto: "senin.jpeg",
         gizi: {
             energi: { kecil: "539.2 Kcal", besar: "629.5 Kcal", bumil: "756.1 Kcal", balita: "480.4 Kcal", alergen: "-" },
             protein: { kecil: "16.9g", besar: "18.6g", bumil: "25.7g", balita: "14.9g", alergen: "-" },

@@ -25,9 +25,9 @@ const dataMenu = {
         laukUtama: "Ayam Rica Rica (PB, Bumil) / Ayam Kecap (PK Balita)",
         laukPendamping: "Perkedel Tahu",
         sayur: "Saute Buncis Jagung",
-        buah: "-",
+        buah: "Kelengkeng Kristal",
         pelengkap: "-",
-        foto: "selasa.jpg",
+        foto: "selasa.jpeg",
         gizi: {
             energi: { kecil: "0 Kcal", besar: "0 Kcal", bumil: "0 Kcal", balita: "0 Kcal", alergen: "-" },
             protein: { kecil: "0g", besar: "0g", bumil: "0g", balita: "0g", alergen: "-" },
